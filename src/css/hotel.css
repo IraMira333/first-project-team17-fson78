@@ -1,0 +1,46 @@
+.room-luxe {
+  background-color: #fffdee;
+}
+.container {
+}
+.pre-title {
+}
+.logo {
+}
+.room-luxe-title {
+}
+.title {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.description {
+  width: 258px;
+  left: 15px;
+  top: 178px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+}
+.btn-detail {
+}
+.btn-price {
+}
+.room-for-3 {
+}
+.room-3x {
+}
+.room-3x-title {
+}
+.room-for-2 {
+}
+.room-2x {
+}
+.room-2x-title {
+}
