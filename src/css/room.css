@@ -126,15 +126,17 @@
     .room-btn-item {
         gap: 32px;
         margin-left: auto;
-        width: 434px;
-        font-size: 24px;
-        line-height: 1.2;
+        width: 440px;
     }
     .room-item {
         gap: 16px;
         font-size: 20px;
         line-height: 1.2;
     
+    }
+    .room-btn {
+    font-size: 24px;
+    padding: 18px 38px;
     }
 }
 @media screen and (min-width: 1280px) {
@@ -149,6 +151,6 @@
         gap: 159px;
     }
     .room-btn-item {
-        margin-left: 578px;
+        margin-left: 559px;
     }
 }
