@@ -1,0 +1,100 @@
+.menu {
+    display: flex;
+    justify-content: flex-start;
+}
+.menu-resto{
+    padding: 58px 85px 140px 85px;
+    background: #F0ECD6;
+    outline: 1px solid red;
+    position: relative;
+}
+.menu-resto-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    padding-bottom: 40px;
+    /*padding-left: 105px;
+    padding-top: 58px;*/
+}
+
+
+.garychi-stravu{
+font-weight: 700;
+font-size: 24px;
+line-height: 1.17;
+padding-bottom: 20px;
+}
+.name-bludo {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+/*padding-top: 20px;*/
+padding-bottom: 4px;
+}
+.discription-bludo {
+font-weight: 400;
+font-size: 10px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+padding-right: 60px;
+width: 280px;
+padding-bottom: 12px;
+}
+.ves-bludo {
+font-weight: 300;
+font-size: 14px;
+line-height: 1.21;
+letter-spacing: 0.02em;
+padding-right: 60px;
+}
+.price-bludo {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+}
+.garnir {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+.left {
+    margin-right: 140px;
+}
+.desert{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+padding-right: 160px;
+padding-bottom: 11px;
+}
+
+.napoi{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+padding-right: 100px;
+padding-bottom: 11px;
+}
+.zakaz-stola-btn{
+background: #000000;
+border: 2px solid #FFFDEE;
+border-radius: 25px;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.02em;
+color: #F3C653;
+padding: 14px 24px;
+position: absolute;
+right: 85px;
+bottom: 60px;
+}
+
+
+
+
