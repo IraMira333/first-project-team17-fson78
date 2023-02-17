@@ -1,0 +1,219 @@
+/* Hero */
+.rest-hotel {
+    position: relative;
+    max-width: 1280px;
+    height: 720px;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        url(../img/hero-img/bg-hero-index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 164px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .rest-hotel {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../img/hero-img/bg-hero-index@2x.jpg);
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .rest-hotel {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../img/hero-img/bg-hero-index@3x.jpg);
+    }
+}
+
+.title-hero {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 138px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle-hero {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.heading-hero {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 144px;
+}
+
+.buttons-hero {
+    position: absolute;
+    bottom: 64px;
+    right: 85px;
+}
+
+.hero-button {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    padding: 14px 35px;
+    display: block;
+    min-width: 258px;
+}
+
+.hero-btn {
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-right: 0;
+    display: flex;
+    gap: 60px;
+}
+
+.map-address {
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #E5E5E5;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    width: 285px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 44px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.maps-address {
+    position: absolute;
+    bottom: 64px;
+    left: 85px;
+}
+
+.icon-picture {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+
+
+/* rest-hero bgi */
+
+.rest-hero {
+    position: relative;
+    max-width: 1280px;
+    height: 720px;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        url(../img/hero-img/bg-rest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 164px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .rest-hero {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../img/hero-img/bg-rest@2x.jpg);
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .rest-hero {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../img/hero-img/bg-rest@3x.jpg);
+    }
+}
+
+/* hotel-hero */
+.hotel-hero {
+    position: relative;
+    max-width: 1280px;
+    height: 720px;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        url(../img/hero-img/bg-hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 164px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hotel-hero {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../img/hero-img/bg-hotel@2x.jpg);
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hotel-hero {
+        background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../img/hero-img/bg-hotel@3x.jpg);
+    }
+}
+
