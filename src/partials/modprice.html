@@ -1,0 +1,33 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close button" data-modal-close>
+      <svg width="24" height="24" class="icon-modal-close">
+        <use href="./images/index-icons/sprite.svg#icon-close-black"></use>
+      </svg>
+    </button>
+    <h1 class="modal-title">ЦІНИ НА НОМЕР</h1>
+    <h2 class="modal-secondary-title">Двомісний люкс</h2>
+    <p class="modal-text">Категорія номеру</p>
+    <form class="modal-form">
+      
+      <div class="form-field">
+        <input
+          type="number"
+          class="modal-input"
+          name="nigths"
+          id="nigths"
+          required
+        />
+        <label for="nigths" class="modal-label">Кількість ночей</label>
+      </div>
+
+      <div class="form-field">
+        <input type="number" class="modal-input" name="price" id="price" />
+        <label for="price" class="modal-label">грн</label>
+      </div>
+
+      <button type="submit" class="modal-btn">ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+  </div>
+</div>
+<script src="./js/modal.js"></script>
