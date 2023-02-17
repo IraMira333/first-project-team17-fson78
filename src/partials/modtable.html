@@ -34,12 +34,17 @@
       </div>
 
       <div class="form-field">
-        <select id="category" name="category">
-          <option value="1-berth">Двомісний номер</option>
-          <option value="2-berth-lux" selected>Двомісний люкс</option>
-          <option value="3-berth">Тримісний номер</option>
-        </select>
-        <label for="category">Категорія номеру</label>
+        <input
+          type="number"
+          class="modal-input"
+          name="people"
+          id="people"
+          value="2"
+          min="1"
+          pattern="[0-9]{,2}"
+          required
+        />
+        <label for="people" class="modal-label">Столик на яку кількість осіб?</label>
       </div>
 
       <div class="form-field">
