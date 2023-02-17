@@ -1,8 +1,11 @@
 /* Hero */
-.rest-hotel {
+.hero {
     position: relative;
     max-width: 1280px;
     height: 720px;
+}
+.rest-hotel {
+    position: relative;
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.65)),
@@ -72,7 +75,6 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 144px;
 }
 
 .buttons-hero {
@@ -94,6 +96,10 @@
     padding: 14px 35px;
     display: block;
     min-width: 258px;
+}
+
+.hero-button:hover {
+    background-color: #FFFFFF;
 }
 
 .hero-btn {
@@ -134,6 +140,7 @@
     position: absolute;
     top: 16px;
     left: 10px;
+    fill: #F3C653;
 }
 
 
@@ -216,4 +223,105 @@
             url(../img/hero-img/bg-hotel@3x.jpg);
     }
 }
+
+/* room-hero */
+.room-hero {
+    position: relative;
+    max-width: 1280px;
+    height: 720px;
+    background-image: url(../img/hero-img/bg-hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 524px;
+    padding-left: 85px;
+    margin-bottom: 24px;
+    /* padding-top: 164px; */
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .room-hero {
+        background-image: url(../img/hero-img/bg-hotel@2x.jpg);
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .room-hero {
+        background-image: url(../img/hero-img/bg-hotel@3x.jpg);
+    }
+}
+
+.title-room {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.text-room {
+    max-width: 400px;
+    /* height: 83px; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.room-btn {
+    position: absolute;
+    right: 85px;
+    bottom: 66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 14px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 14px;
+    /* width: 232px; */
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+}
+.room-btn:hover {
+    background-color: #FFFFFF;
+}
+.right-svg {
+    position: absolute;
+    top: 412px;
+    right: 85px;
+    background: rgba(0, 0, 0, 0.65);
+    fill: #FFFFFF;
+}
+.right-svg:hover {
+    fill: #F3C653;
+}
+.left-svg {
+    position: absolute;
+    top: 412px;
+    left: 85px;
+    background: rgba(0, 0, 0, 0.65);
+    fill: #FFFFFF;
+}
+.left-svg:hover {
+    fill: #F3C653;
+}
+
 
