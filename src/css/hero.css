@@ -403,6 +403,7 @@
         color: #FFFFFF;
     
 }
+
 .map-address {
     position: absolute;
     top: 64px;
@@ -440,21 +441,15 @@
 }
 .hero-button {
     background-color: rgba(0, 0, 0, 0.4);
-font-family: 'Montserrat';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height */
-
     letter-spacing: 0.02em;
-
-    /* Akzent yellow */
-
     color: #F3C653;
-    
-        border: 2px solid #FFFFFF;
-        border-radius: 25px;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
     padding: 14px 24px;
     display: flex;
     min-width: 236px;
@@ -566,6 +561,7 @@ font-family: 'Montserrat';
     right: 15px;
     background: rgba(0, 0, 0, 0.65);
     fill: #FFFFFF;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .right-svg:hover {
@@ -578,6 +574,7 @@ font-family: 'Montserrat';
     left: 15px;
     background: rgba(0, 0, 0, 0.65);
     fill: #FFFFFF;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .left-svg:hover {
@@ -679,11 +676,205 @@ font-family: 'Montserrat';
 
 /* tab */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:960px) {
     .container {
-        width: ;
+        width: 960px;
+        margin: 0 auto;
     }
+    .title-hero {
+        padding-top: 188px;
+        margin-bottom: 16px;
+    }
+        .subtitle-hero {
+            margin-bottom: 56px;
+        }
+
+    .rest-hotel {
+        background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../img/hero-img/bg-hero-index-tab.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .rest-hotel {
+            background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url(../img/hero-img/bg-hero-index-tab@2x.jpg);
+            }
+        }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .rest-hotel {
+            background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+                url(../img/hero-img/bg-hero-index-tab@3x.jpg);
+                            }
+                        }
+        .hero {
+            position: relative;
+            min-width: 960px;
+            height: 720px;
+        }
+        .map-address {
+            position: absolute;
+            top: 600px;
+            left: 62px;
+            width: 210px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 34px;
+        }
+        .hero-btn {
+            position: absolute;
+            right: 62px;
+            bottom: 40px;
+            display: flex;
+            gap: 40px;
+            justify-content: end;
+            margin-bottom: 0;
+        }
+
+                .rest-hero {
+                    background-image: linear-gradient(to right,
+                            rgba(0, 0, 0, 0.65),
+                            rgba(0, 0, 0, 0.65)),
+                        url(../img/hero-img/bg-rest-tab.jpg);
+                }
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .rest-hero {
+                        background-image: linear-gradient(to right,
+                                rgba(0, 0, 0, 0.65),
+                                rgba(0, 0, 0, 0.65)),
+                            url(../img/hero-img/bg-rest-tab@2x.jpg);
+                    }
+                }
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .rest-hero {
+                        background-image: linear-gradient(to right,
+                                rgba(0, 0, 0, 0.65),
+                                rgba(0, 0, 0, 0.65)),
+                            url(../img/hero-img/bg-rest-tab@3x.jpg);
+                    }
+                }
+        .subtitle-hero{
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .heading-hero {
+            font-size: 36px;
+            line-height: 41px;
+            text-transform: uppercase;
+        }
+
+
+        .hotel-hero {
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../img/hero-img/bg-hotel-tab.jpg);
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hotel-hero {
+                background-image: linear-gradient(to right,
+                        rgba(0, 0, 0, 0.65),
+                        rgba(0, 0, 0, 0.65)),
+                    url(../img/hero-img/bg-hotel-tab@2x.jpg);
+            }
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hotel-hero {
+                background-image: linear-gradient(to right,
+                        rgba(0, 0, 0, 0.65),
+                        rgba(0, 0, 0, 0.65)),
+                    url(../img/hero-img/bg-hotel-tab@3x.jpg);
+            }   
+        }
 
 
 
+
+.room-hero {
+    background-image: url(../img/hero-img/bg-hotel-tab.jpg);
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .room-hero {
+        background-image: url(../img/hero-img/bg-hotel-tab@2x.jpg);
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .room-hero {
+        background-image:
+            url(../img/hero-img/bg-hotel-tab@3x.jpg);
+    }
+}
+
+
+.room-hero {
+    padding-top: 468px;
+}
+
+        .title-room{
+                display: inline;
+            font-weight: 700;
+                font-size: 36px;
+                line-height: 41px;
+                letter-spacing: 0.05em;
+                width: 507px;
+                margin-bottom: 24px;
+            }
+.text-room {
+    margin-top: 24px;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.maps-address {
+    position: absolute;
+        top: 51px;
+            left: -47px;
+}
+
+.room-btn {
+    position: absolute;
+    bottom: 62px;
+    right: 15px;
+}
+
+
+
+            .right-svg {
+                top: 340px;
+            }
+            .left-svg {
+                top: 340px;
+            }
+        
+        
+        
+        
+        
+   }
