@@ -104,7 +104,14 @@
 .room-for-2 {
   background: #fffdee;
 }
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 414px;
+}
 
 @media screen and (min-width: 1024px) {
   .container {
