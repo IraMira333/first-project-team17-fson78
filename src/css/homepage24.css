@@ -1,23 +1,40 @@
-/*BACKGROUNDS*/
-
-.side-background {
-  background-color: #0e0c07;
+.container {
+  max-width: 414px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rest-h2 {
-  max-width: 414px;
+  background-color: #0e0c07;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.65)
     ),
     url('../img/hmpg-2-4/restaurant-back.jpg');
-  margin-left: auto;
-  margin-right: auto;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+  
 }
 
+.rest-container{
+  padding-top: 24px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.hotel-container{
+  padding-top: 24px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+
 .hotel-h2 {
-  max-width: 414px;
+  background-color: #0e0c07;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.7),
@@ -25,8 +42,8 @@
     ),
     url('../img/hmpg-2-4/hotel-back.jpg');
   background-position: bottom;
-  margin-left: auto;
-  margin-right: auto;
+  background-repeat: no-repeat;
+ 
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -39,6 +56,7 @@
         rgba(0, 0, 0, 0.65)
       ),
       url('../img/hmpg-2-4/restaurant-back@2x.jpg');
+      
   }
   .hotel-h2 {
     background-image: linear-gradient(
@@ -50,7 +68,7 @@
   }
 }
 
-@media screen and (min-width: 960px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .rest-h2 {
@@ -60,6 +78,7 @@
         rgba(0, 0, 0, 0.65)
       ),
       url('../img/hmpg-2-4/restaurant-back-tablet@2x.jpg');
+      
   }
   .hotel-h2 {
     background-image: linear-gradient(
@@ -71,22 +90,29 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .rest-h2 {
-    max-width: 1024px;
+    
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
         rgba(0, 0, 0, 0.65)
       ),
       url('../img/hmpg-2-4/restaurant-back-tablet.jpg');
+      
     margin-right: auto;
     margin-left: auto;
-    background-position: center;
+
+  }
+
+  .rest-container,
+  .hotel-container {
+    max-width: 960px;
+    padding-top: 48px;
+    padding-bottom: 40px;
   }
 
   .hotel-h2 {
-    max-width: 1024px;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.7),
@@ -94,29 +120,12 @@
       ),
       url('../img/hmpg-2-4/hotel-back-tablet.jpg');
   }
-  .rest-h2 > .container,
-  .hotel-h2 > .container {
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+
 }
 
-.hotel-h2 > .container,
-.rest-h2 > .container {
-  padding: 0 15px;
-}
 
-@media screen and (min-width: 1140px) {
-  .rest-h2 > .container,
-  .hotel-h2 > .container {
-    max-width: 1140px;
-  }
-}
-
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1280px) {
   .rest-h2 {
-    max-width: 1280px;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -126,7 +135,6 @@
   }
 
   .hotel-h2 {
-    max-width: 1280px;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -134,9 +142,16 @@
       ),
       url('../img/hmpg-2-4/hotel-back-desktop.jpg');
   }
+
+  .rest-container,
+  .hotel-container {
+    max-width: 1140px;
+    overflow: visible;
+    
+  }
 }
 
-@media screen and (min-width: 1140px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .rest-h2 {
@@ -161,8 +176,8 @@
 .textblock {
   max-width: 259px;
   margin-left: auto;
-  padding-bottom: 48px;
-  padding-top: 24px;
+  margin-bottom: 48px;
+  
 }
 
 .logo-h2 {
@@ -199,14 +214,14 @@
   max-width: 243px;
   margin-right: auto;
   margin-left: 17px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .textblock-hotel .text-h2 {
   text-align: left;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .logo-h2 {
     font-size: 64px;
     line-height: 1.078;
@@ -225,15 +240,13 @@
 
   .textblock {
     max-width: 610px;
-    padding-bottom: 40px;
-    padding-top: 48px;
-    margin-right: 104px;
+    margin-bottom: 40px;
+    margin-right: 89px;
   }
 
   .textblock-hotel {
     max-width: 549px;
-    padding-bottom: 40px;
-    padding-top: 48px;
+    margin-bottom: 40px;
     margin-left: 150px;
   }
 
@@ -242,7 +255,7 @@
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1280px) {
   .textblock {
     margin-right: auto;
     margin-left: 253px;
@@ -279,8 +292,9 @@
 
 .hotel-slider-wrap {
   padding-right: 25px;
-  width: 324px;
   margin-left: auto;
+  width: 100%;
+  
 }
 
 .hotel-slider-image {
@@ -294,24 +308,28 @@
   position: absolute;
   translate: calc((-100% - 20px));
   content: url(../img/hmpg-2-4/hotel2.png);
+  height: 270px;
 }
 
 .slider-btn-wrap {
-  padding-left: 25px;
+  margin-left: 25px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .slider-btn-wrap-right {
-  padding-right: 27px;
+  margin-right: 27px;
   text-align: right;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .swipe-left,
 .swipe-right {
-  margin-top: 16px;
-  margin-bottom: 16px;
   text-align: center;
-  padding: 0;
   background-color: transparent;
+  padding: 0;
+  margin: 0;
   border: none;
   fill: #ffffff;
   width: 32px;
@@ -336,9 +354,9 @@
   display: block;
   width: 236px;
   margin: 0 auto;
-  margin-bottom: 24px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  margin-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: center;
   font-family: Montserrat;
   font-weight: 700;
@@ -353,6 +371,10 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.rest-button:last-child {
+  margin-bottom: 0;
+}
+
 .rest-button:hover,
 .rest-button:focus,
 .rest-button:active {
@@ -360,27 +382,27 @@
   border: 2px solid #f3c653;
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1023px) {
   .small-slider-image {
     display: none;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .tablet-content-wrap {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 12px;
-    padding-bottom: 40px;
+    
+    
   }
 
   .tablet-content-wrap-hotel {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-bottom: 24px;
+    
   }
 
   .rest-button {
@@ -388,51 +410,71 @@
   }
 
   .rest-button:last-child {
+    margin-bottom: 0px;
+  }
+
+  .buttons-wrap {
     margin-bottom: 56px;
   }
   .swipe-left,
   .swipe-right {
     margin-bottom: 0px;
-    margin-top: 24px;
+    
   }
-
+.slider-btn-wrap {
+  margin: 0;
+  margin-left: 29px;
+  margin-top: 24px;
+}
   .rest-slider-wrap {
     display: flex;
     gap: 34px;
+    margin-left: 29px;
+    padding: 0;
   }
 
+  .hotel-slider-image,
   .rest-slider-image {
     width: 270px;
-  }
-
-  .hotel-slider-image {
-    width: 270px;
+    margin: 0;
   }
   .rest-slider-image::before,
   .hotel-slider-image::before {
     display: none;
   }
 
+  .rest-slider-image{
+    margin: 0;
+  }
+
   .hotel-slider-wrap {
     display: flex;
+    justify-content: end;
     gap: 34px;
     width: 690px;
-    padding-right: 25px;
+    margin-right: 32px;
+    padding: 0;
+  }
+
+  .slider-btn-wrap-right {
+    margin: 24px 32px 0 0;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1280px) {
   .small-slider-image.dynamic {
     width: 270px;
   }
   .tablet-content-wrap {
     padding-right: 0;
-    width: 1140px;
+    width: 1143px;
+    
   }
 
   .rest-slider-wrap {
-    padding-left: 32px;
     gap: 87px;
+    margin-left: 32px;
+  
   }
 
   .hotel-slider-wrap {
@@ -440,11 +482,11 @@
     justify-content: flex-start;
     flex-direction: row-reverse;
     gap: 87px;
+    margin-right: 33px;
   }
 
-  .tablet-content-wrap-hotel {
-    padding-bottom: 40px;
-    width: 1140px;
-    translate: -30px;
+  .slider-btn-wrap-right {
+    margin-right: 33px;
   }
+
 }
