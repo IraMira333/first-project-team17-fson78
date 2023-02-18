@@ -1,24 +1,36 @@
 .room-luxe {
   background-color: #fffdee;
 }
-.container {
-}
 .pre-title {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #b4b4b4;
+  /* display: inline-block; */
+
+  padding-top: 32px;
 }
 .logo {
+  font-family: 'Mimino-700';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+  letter-spacing: 0.3em;
+  color: #494848;
+
+  margin-top: 8px;
 }
-.room-luxe-title {
-}
-@font-face {
-  font-family: Mimino-700;
-  src: url(../fonts/FontsFree-Net-FilmP3.ttf);
-}
+
 .title {
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.05em;
+
+  margin-top: 32px;
 }
 .description {
   width: 258px;
@@ -30,20 +42,145 @@
   line-height: 15px;
   letter-spacing: 0.02em;
   color: #7a7a7a;
+
+  margin-top: 12px;
+}
+.btn-swipe {
+  background: transparent;
+  border: none;
+  margin-top: 20px;
+}
+.swipe-1 {
+  display: flex;
+  gap: 30px;
+}
+.swipe-2 {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+.btn {
+  background: #000000;
+  border: 2px solid #f0ecd6;
+  border-radius: 25px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #f3c653;
 }
 .btn-detail {
+  padding: 14px 64px;
+  margin-bottom: 16px;
 }
 .btn-price {
+  padding: 14px 37px;
+}
+.wrap-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 32px;
 }
 .room-for-3 {
+  background: #f0ecd6;
 }
-.room-3x {
+.wrap-3x {
+  justify-content: end;
 }
-.room-3x-title {
+.first-room-img3x {
+  margin-top: 32px;
+}
+.wrap-img3x {
+  margin-top: 32px;
+  margin-left: 130px;
+  display: flex;
+  column-gap: 16px;
+  width: 100%;
 }
 .room-for-2 {
+  background: #fffdee;
 }
-.room-2x {
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 414px;
 }
-.room-2x-title {
+img {
+  background: #907979;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  .pre-title {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .pre-luxe {
+    padding-top: 62px;
+  }
+  .pre-3x {
+    padding-top: 66px;
+  }
+  .pre-2x {
+    padding-top: 64px;
+  }
+  .logo {
+    font-size: 64px;
+    line-height: 69px;
+
+    margin-top: 4px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-top: 62px;
+  }
+  .description {
+    min-width: 400px;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-top: 16px;
+  }
+  .btn {
+    background: #000000;
+    border: 2px solid #f0ecd6;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+  }
+  .btn-detail {
+    padding: 14px 64px;
+    margin-bottom: 16px;
+  }
+  .btn-price {
+    padding: 14px 37px;
+  }
+  .wrap-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
 }

@@ -1,38 +1,38 @@
 <section class="room-luxe">
   <div class="room-luxe container">
-    <p class="pre-title">Amet minim mollit non</p>
+    <p class="pre-title pre-luxe">Amet minim mollit non</p>
     <a href="../index.html" class="logo">MIMIHO</a>
-    <h2 class="room-luxe-title title">ДВОМІСНИЙ НОМЕР люкс</h2>
+    <h2 class="title">ДВОМІСНИЙ НОМЕР люкс</h2>
     <p class="description">
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
-    <!-- через 'picture' так додавати?  -->
+    <!-- через picture так додавати?  -->
     <picture>
       <source
         media="(min-width: 1200px)"
         srcset="
-          ../src/img/hotel/room-luxe-desk-1x.jpg 1x,
-          ../src/img/hotel/room-luxe-desk-2x.jpg 2x
+          ../img/hotel/room-luxe-desk-1x.jpg 1x,
+          ../img/hotel/room-luxe-desk-2x.jpg 2x
         "
       />
       <source
         media="(min-width: 768px)"
         srcset="
-          ../src/img/hotel/room-luxe-tab-1x.jpg 1x,
-          ../src/img/hotel/room-luxe-tab-2x.jpg 2x
+          ../img/hotel/room-luxe-tab-1x.jpg 1x,
+          ../img/hotel/room-luxe-tab-2x.jpg 2x
         "
       />
       <source
         media="(max-width: 767px)"
         srcset="
-          ../src/img/hotel/room-luxe-mob-1x.jpg 1x,
+          ../img/hotel/room-luxe-mob-1x.jpg     1x,
           ../src/img/hotel/room-luxe-mob-2x.jpg 2x
         "
       />
       <img
-        src="../src/img/hotel/room-luxe-mob-1x.jpg"
+        src="../img/hotel/room-luxe-mob-1x.jpg"
         alt="luxe room"
         width="244"
         height="322"
@@ -48,13 +48,13 @@
       "
       width="244"
       height="322"
-    /> -->
+    />
     <img
-      src="../src/img/hotel/cup-tea-mob-1x.jpg"
+      src="src/img/hotel/bath-desk-1x.jpg"
       alt="cup of coffee"
       srcset="
-        ../src/img/hotel/cup-tea-mob-1x.jpg 1x,
-        ../src/img/hotel/cup-tea-mob-2x.jpg 2x
+        src/img/hotel/cup-tea-mob-1x.jpg 1x,
+        src/img/hotel/cup-tea-mob-2x.jpg 2x
       "
       width="194"
       height="194"
@@ -68,23 +68,51 @@
       "
       width="194"
       height="194"
-    />
-    <button type="button" class="btn-detail">Детальніше</button>
-    <button type="button" class="btn-price">Переглянути ціни</button>
+    /> -->
+    <div class="swipe-1">
+      <button type="button" class="btn-left btn-swipe">
+        <svg width="32" height="32">
+          <use href="./img/sprite-icons.svg#arrow-left "></use>
+        </svg>
+      </button>
+      <button type="button" class="btn-right btn-swipe">
+        <svg width="32" height="32">
+          <use href="./img/sprite-icons.svg#arrow-right "></use>
+        </svg>
+      </button>
+    </div>
+    <div class="wrap-btn">
+      <button type="button" class="btn-detail btn">Детальніше</button>
+      <button type="button" class="btn-price btn">Переглянути ціни</button>
+    </div>
   </div>
 </section>
 
-<section class="room-for-3">
-  <div class="room-3x container">
+<!-- <section class="room-luxe">
+  <div class="room-luxe container">
     <p class="pre-title">Amet minim mollit non</p>
     <a href="../index.html" class="logo">MIMIHO</a>
-    <h2 class="room-3x-title title">ТРЬОХМІСНИЙ НОМЕР</h2>
+    <h2 class="title">ДВОМІСНИЙ НОМЕР люкс</h2>
     <p class="description">
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
-    </p>
+    </p> -->
+
+<section class="room-for-3">
+  <div class="room-3x container">
+    <div class="wrap-3x">
+      <p class="pre-title pre-3x">Amet minim mollit non</p>
+      <a href="../index.html" class="logo">MIMIHO</a>
+      <h2 class="title">ТРЬОХМІСНИЙ НОМЕР</h2>
+      <p class="description">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
     <img
+      class="first-room-img3x"
       src="../src/img/hotel/room-luxe-mob-1x.jpg"
       alt="room for 3"
       srcset="
@@ -94,36 +122,52 @@
       width="244"
       height="322"
     />
-    <img
-      src="../src/img/hotel/cup-tea-mob-1x.jpg"
-      alt="cup of coffee"
-      srcset="
-        ../src/img/hotel/cup-tea-mob-1x.jpg 1x,
-        ../src/img/hotel/cup-tea-mob-2x.jpg 2x
-      "
-      width="194"
-      height="194"
-    />
-    <img
-      src="../src/img/hotel/bath-mob-1x.jpg "
-      alt="bath"
-      srcset="
-        ../src/img/hotel/bath-mob-1x.jpg 1x,
-        ../src/img/hotel/bath-mob-2x.jpg 2x
-      "
-      width="194"
-      height="194"
-    />
-    <button type="button" class="btn-detail">Детальніше</button>
-    <button type="button" class="btn-price">Переглянути ціни</button>
+    <div class="wrap-img3x">
+      <img
+        src="../src/img/hotel/cup-tea-mob-1x.jpg"
+        alt="cup of coffee"
+        srcset="
+          ../src/img/hotel/cup-tea-mob-1x.jpg 1x,
+          ../src/img/hotel/cup-tea-mob-2x.jpg 2x
+        "
+        width="194"
+        height="194"
+      />
+      <img
+        src="../src/img/hotel/bath-mob-1x.jpg "
+        alt="bath"
+        srcset="
+          ../src/img/hotel/bath-mob-1x.jpg 1x,
+          ../src/img/hotel/bath-mob-2x.jpg 2x
+        "
+        width="194"
+        height="194"
+      />
+    </div>
+    <div class="swipe-2">
+      <button type="button" class="btn-left btn-swipe">
+        <svg width="32" height="32">
+          <use href="./img/sprite-icons.svg#arrow-left "></use>
+        </svg>
+      </button>
+      <button type="button" class="btn-right btn-swipe">
+        <svg width="32" height="32">
+          <use href="./img/sprite-icons.svg#arrow-right "></use>
+        </svg>
+      </button>
+    </div>
+    <div class="wrap-btn">
+      <button type="button" class="btn-detail btn">Детальніше</button>
+      <button type="button" class="btn-price btn">Переглянути ціни</button>
+    </div>
   </div>
 </section>
 
 <section class="room-for-2">
   <div class="room-2x container">
-    <p class="pre-title">Amet minim mollit non</p>
+    <p class="pre-title pre-2x">Amet minim mollit non</p>
     <a href="../index.html" class="logo">MIMIHO</a>
-    <h2 class="room-2x-title title">ДВОМІСНИЙ НОМЕР</h2>
+    <h2 class="title">ДВОМІСНИЙ НОМЕР</h2>
     <p class="description">
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit. Exercitation veniam
@@ -159,7 +203,21 @@
       width="194"
       height="194"
     />
-    <button type="button" class="btn-detail">Детальніше</button>
-    <button type="button" class="btn-price">Переглянути ціни</button>
+    <div class="swipe-1">
+      <button type="button" class="btn-left btn-swipe">
+        <svg width="32" height="32">
+          <use href="./img/sprite-icons.svg#arrow-left "></use>
+        </svg>
+      </button>
+      <button type="button" class="btn-right btn-swipe">
+        <svg width="32" height="32">
+          <use href="./img/sprite-icons.svg#arrow-right "></use>
+        </svg>
+      </button>
+    </div>
+    <div class="wrap-btn">
+      <button type="button" class="btn-detail btn">Детальніше</button>
+      <button type="button" class="btn-price btn">Переглянути ціни</button>
+    </div>
   </div>
 </section>
