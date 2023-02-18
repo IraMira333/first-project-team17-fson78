@@ -85,6 +85,12 @@
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.rest-swipe-left:hover,
+.rest-swipe-right:hover,
+.rest-swipe-left:focus,
+.rest-swipe-right:focus {
+  fill: #f3c653;
+}
 
 @media screen and (min-width: 1024px) {
   .rest-container {
@@ -153,9 +159,9 @@
   }
   .rest-card-text {
     margin-left: 32px;
-     }
-     .rest-slider {
-      margin-top: -151px;
-      margin-bottom: 40px;
-}
+  }
+  .rest-slider {
+    margin-top: -151px;
+    margin-bottom: 40px;
+  }
 }
