@@ -43,3 +43,21 @@
   font-family: Mimino-700;
   src: url(../fonts/FontsFree-Net-FilmP3.ttf);
 }
+
+.container {
+  max-width: 414px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
