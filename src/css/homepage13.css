@@ -9,13 +9,8 @@
     background: #DADADA;;
 }
 
-.container {
-    width: 414px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 16px;
+.first-section,
+.third-section {
     overflow: hidden;
 }
 
@@ -41,7 +36,7 @@
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-
+    padding-top: 16px;
     width: 198px;
     margin: 0;
 }
@@ -146,6 +141,7 @@
 
 .third-section .header-two {
     margin-left: auto;
+    padding-top: 18px;
 }
 
 .third-section .header-tree {
