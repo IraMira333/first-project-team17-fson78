@@ -11,7 +11,7 @@
 
   padding-top: 32px;
 }
-.logo {
+.logo-mi {
   font-family: 'Mimino-700';
   font-style: normal;
   font-weight: 700;
@@ -85,21 +85,44 @@
   margin-top: 20px;
   padding-bottom: 32px;
 }
+
+.img-1 {
+  margin-top: 32px;
+  margin-left: auto;
+}
+.wrap-img-1 {
+  margin-right: 130px;
+  display: flex;
+  column-gap: 16px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.img-2 {
+  margin-top: 32px;
+  margin-right: auto;
+}
+
 .room-for-3 {
   background: #f0ecd6;
 }
 .wrap-3x {
-  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.descr-2 {
+  margin-right: 40px;
 }
 .first-room-img3x {
   margin-top: 32px;
 }
-.wrap-img3x {
-  margin-top: 32px;
+.wrap-img-3x {
   margin-left: 130px;
   display: flex;
   column-gap: 16px;
   width: 100%;
+  align-items: flex-end;
 }
 .room-for-2 {
   background: #fffdee;
