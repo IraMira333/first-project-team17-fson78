@@ -9,13 +9,16 @@
 }
 .room-luxe-title {
 }
+@font-face {
+  font-family: Mimino-700;
+  src: url(../fonts/FontsFree-Net-FilmP3.ttf);
+}
 .title {
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.05em;
-  color: #000000;
 }
 .description {
   width: 258px;
