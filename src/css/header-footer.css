@@ -14,14 +14,32 @@
   letter-spacing: 0.3em;
   color: #ffffff;
 }
+
+.hotel-tel {
+  display: flex;
+  gap: 6px;
+}
+.rest-tel {
+  display: flex;
+  gap: 6px;
+  height: 24px;
+}
 .header-nav {
 }
 .header-list {
+  display: flex;
+  gap: 20px;
 }
-.header-item {
+.header-soc {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
 }
 .header-tel {
-  margin-right: 6px;
+  display: block;
+  width: 100%;
 }
 
 .header-text {
@@ -124,6 +142,44 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .header-logo {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+  }
+  .header-text {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+  .tel-text {
+    display: block;
+  }
+  .header-tel {
+    display: flex;
+    height: 40px;
+    gap: 4px;
+    align-items: center;
+  }
+  .header-icon {
+    margin-left: 8px;
+  }
+  .hotel-tel {
+    align-items: center;
+    gap: 32px;
+  }
+  .rest-tel {
+    gap: 32px;
+    height: 40px;
+    align-items: center;
+  }
+  .header-list {
+    gap: 72px;
+  }
+  .header-item-tel {
+    width: 144px;
+    height: 40px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
   .footer {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -168,6 +224,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .header-logo {
+    margin-right: 135px;
+  }
+  .header-soc {
+    position: static;
+    margin-left: 140px;
+  }
   .container {
     width: 1140px;
     margin: 0 auto;
