@@ -1,0 +1,14 @@
+(() => {
+  const refs = {
+    openModtableBtn: document.querySelector('[data-modtable-open]'),
+    closeModtableBtn: document.querySelector('[data-modtable-close]'),
+    modtable: document.querySelector('[data-modtable]'),
+  };
+
+  refs.openModtableBtn.addEventListener('click', toggleModtable);
+  refs.closeModtableBtn.addEventListener('click', toggleModtable);
+
+  function toggleModtable() {
+    refs.modtable.classList.toggle('is-hidden');
+  }
+})();

@@ -1,172 +1,25 @@
 /* ---MODALKA-- */
-/*
-   .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-   }
 
-
- .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 576px;
-  max-width: 408px;
-  padding: 24px;
-  background-color: var(--modal-bgcolor);
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
- }
-
-
- .modal-title {
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
- }
-
- .form-field {
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
- }
- .modal-input {
-  width: 100%;
-  height: 40px;
-  padding-left: 40px;
-  background-color: transparent;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .modal-input:focus {
-  outline: transparent;
-  border: 1px solid var(--acsent);
- }
-
- .modal-label {
-  display: inline-block;
-  margin-bottom: 4px;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6667;
-  letter-spacing: 0.01em;
-  color: #8e8f99;
- }
- .svg-centr {
-  position: relative;
- }
- .modal-svg {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  fill: var(--modal-icon-fill);
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .modal-input:focus + .modal-svg {
-  fill: var(--acsent);
- }
-
- .modal-comment {
-  width: 100%;
-  height: 120px;
-  padding: 8px 16px;
-
-  background-color: transparent;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  resize: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
- .modal-comment::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-
-  color: rgba(117, 117, 117, 0.5);
- }
- .modal-comment:focus {
-  outline: transparent;
-  border: 1px solid var(--acsent);
- }
- .policy-field {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333;
-  letter-spacing: 0.04em;
-  margin-bottom: 24px;
-  margin-top: 16px;
- }
- .policy-input:checked + .policy-text::before {
-  background: #404bbf;
-  border: 1.25px solid #404bbf;
-  border-radius: 2px;
-  background-image: url(../images/index-icons/tick.svg);
-  background-repeat: no-repeat;
-  background-position: center;
- }
- .policy-text {
-  color: #757575;
-  display: flex;
-  align-items: center;
- }
- .policy-text::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  border: 1.25px solid #2e2f42;
-  border-radius: 2px;
- }
- .policy-link {
-  text-decoration-line: underline;
-  color: var(--acsent);
- }
-
- .modal-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 169px;
-  height: 56px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: var(--acsent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
- } */
-
- .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #544f29;
+  background-color: rgba(14, 12, 7, 0.8);
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .modal {
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,21 +30,116 @@
   background-color: #fffdee;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- .modal-close {
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+.modal-close {
   display: block;
   height: 24px;
   width: 24px;
   margin-right: 1px;
   margin-left: auto;
-border: none;
-background-color: transparent;
+  border: none;
+  background-color: transparent;
   /* margin-left: auto; */
   padding: 0;
 
   cursor: pointer;
-   }
+}
 
- .icon-modal-close {
-    stroke: #000000;
-   }
+.icon-modal-close {
+  stroke: #000000;
+}
+
+.modal-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6667;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-input {
+  width: 100%;
+  height: 54px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6667;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  color: var(--color-main);
+  padding-left: 15px;
+  margin-top: 20px;
+  border: 1px solid var(--color-second);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+  outline: transparent;
+  border: 1px solid var(--color-acsent);
+}
+.modal-secondary-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6667;
+  letter-spacing: 0.05em;
+  color: var(--color-main);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: none;
+}
+.modal-label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: var(--color-second);
+  margin-top: 8px;
+  margin-left: 15px;
+}
+.modal-text {
+  margin-left: 0;
+}
+.modal-form {
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 40px;
+
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid var(--color-acsent);
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus,
+.modal-btn:active {
+  background-color: var(--color-acsent);
+  color: #000000;
+}
