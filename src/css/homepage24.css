@@ -370,6 +370,7 @@
 
   .rest-button {
     margin-bottom: 16px;
+    background-color: #000000;
   }
 
   .rest-button:last-child {
