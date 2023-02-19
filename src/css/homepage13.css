@@ -100,7 +100,7 @@
 
 .second-image {
   margin-right: auto;
-  width: 200px;
+  min-width: 200px;
   height: 278px;
 }
 
@@ -111,18 +111,18 @@
 .pictures-list {
   display: flex;
   margin-top: 32px;
-  margin-left: 84px;
   margin-right: -195px;
 }
 
 .pictures-list .picture {
   display: block;
   height: 245px;
-  width: 245px;
+  min-width: 245px;
 }
 
 .pictures-list .item:not(:last-child) {
   margin-right: 25px;
+  margin-left: auto;
 }
 
 .arrows-list {
@@ -162,7 +162,7 @@
 
 .third-section .brown-text {
   padding-left: 0;
-  padding-right: 20px;
+  margin-right: 20px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -178,6 +178,10 @@
 
 .third-section .pictures-list {
   margin-left: -195px;
+}
+
+.third-section .pictures-list .item:not(:last-child) {
+    margin-left: 0;
 }
 
 .third-section .arrows-list .item:not(:last-child) {
@@ -255,7 +259,7 @@
 
   .pictures-list .picture {
     height: 194px;
-    width: 194px;
+    min-width: 194px;
   }
 
   .pictures-list {
@@ -318,4 +322,8 @@
   .third-section .pictures-list .item:not(:last-child) {
     margin-left: 0;
   }
+}
+
+@media screen and (min-width: 1280px) {
+
 }
