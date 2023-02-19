@@ -7,7 +7,7 @@
 }
 .restaurant {
   padding-top: 16px;
-  padding-bottom: 14px;
+  padding-bottom: 20px;
 }
 .rest-title {
   font-family: 'Times New Roman';
@@ -64,7 +64,7 @@
   display: flex;
   justify-content: flex-end;
   margin-right: -15px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   gap: 24px;
 }
 
