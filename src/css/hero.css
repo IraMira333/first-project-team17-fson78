@@ -567,7 +567,7 @@
 /* desktop */
 @media screen and (min-width: 1280px) {
     .container {
-            max-width: 1140px;
+            width: 1140px;
             padding-right: 15px;
             padding-left: 15px;
             margin: auto;
@@ -711,14 +711,7 @@
 .room-hero {
     padding-top: 0;
 }
-.title-hero {
-    /* padding-top: 164px; */
-    /* margin-bottom: 32px; */
 
-}
-.subtitle-hero {
-    /* margin-bottom: 64px; */
-}
 .sub-cont {
     position: relative;
 }
