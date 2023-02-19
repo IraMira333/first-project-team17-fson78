@@ -1,4 +1,4 @@
-.rest-container {
+.container-rest {
   max-width: 414px;
   margin-left: auto;
   margin-right: auto;
@@ -93,7 +93,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .rest-container {
+  .container-rest {
     max-width: 960px;
   }
   .restaurant {
@@ -144,7 +144,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .rest-container {
+  .container-rest {
     max-width: 1140px;
   }
   .rest-text {
