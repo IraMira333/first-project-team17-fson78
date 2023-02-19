@@ -6,17 +6,10 @@
   margin-right: auto;
 }
 
+
+.hotel-h2,
 .rest-h2 {
   background-color: #0e0c07;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-}
-
-.hotel-h2 {
-  background-color: #0e0c07;
-  background-position: bottom;
-  background-repeat: no-repeat;
 }
 
 .rest-container{
@@ -31,157 +24,6 @@
   overflow: hidden;
 }
 
-
-
-
-@media screen and (max-width: 1023px) {
-  .rest-container {
-    width: 100%;
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url('../img/hmpg-2-4/restaurant-back.jpg');
-  }
-
-  .hotel-container {
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url('../img/hmpg-2-4/hotel-back.jpg');
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .rest-container {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url('../img/hmpg-2-4/restaurant-back@2x.jpg');
-      
-  }
-  .hotel-container {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url('../img/hmpg-2-4/hotel-back@2x.jpg');
-  }
-}
-
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .rest-h2 {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url('../img/hmpg-2-4/restaurant-back-tablet@2x.jpg');
-      
-  }
-  .hotel-h2 {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url('../img/hmpg-2-4/hotel-back-tablet@2x.jpg');
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .rest-h2 {
-    
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url('../img/hmpg-2-4/restaurant-back-tablet.jpg');
-      
-    margin-right: auto;
-    margin-left: auto;
-
-  }
-
-  .rest-container,
-  .hotel-container {
-    max-width: 960px;
-    padding-top: 48px;
-    padding-bottom: 40px;
-  }
-
-  .hotel-h2 {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url('../img/hmpg-2-4/hotel-back-tablet.jpg');
-  }
-
-}
-
-
-@media screen and (min-width: 1280px) {
-  .rest-h2 {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url('../img/hmpg-2-4/restaurant-back-desktop.jpg');
-  }
-
-  .hotel-h2 {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url('../img/hmpg-2-4/hotel-back-desktop.jpg');
-  }
-
-  .rest-container,
-  .hotel-container {
-    max-width: 1140px;
-    overflow: visible;
-    
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .rest-h2 {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url('../img/hmpg-2-4/restaurant-back-desktop@2x.jpg');
-  }
-  .hotel-h2 {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url('../img/hmpg-2-4/hotel-back-desktop@2x.jpg');
-  }
-}
-
-/*TEXTBLOCK*/
 .textblock {
   max-width: 259px;
   margin-left: auto;
@@ -230,62 +72,11 @@
   text-align: left;
 }
 
-@media screen and (min-width: 1024px) {
-  .logo-h2 {
-    font-size: 64px;
-    line-height: 1.078;
-  }
-
-  .title-h2 {
-    margin-top: 16px;
-    font-size: 24px;
-    line-height: 1.21;
-  }
-
-  .text-h2 {
-    margin-top: 8px;
-    font-size: 16px;
-  }
-
-  .textblock {
-    max-width: 610px;
-    margin-bottom: 40px;
-    margin-right: 89px;
-  }
-
-  .textblock-hotel {
-    max-width: 549px;
-    margin-bottom: 40px;
-    margin-left: 150px;
-  }
-
-  .textblock-hotel .logo-h2 {
-    translate: 20px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .textblock {
-    margin-right: auto;
-    margin-left: 253px;
-  }
-
-  .textblock-hotel {
-    max-width: 595px;
-    margin-right: 253px;
-    margin-left: auto;
-  }
-}
-
-/*SLIDER*/
-
 .rest-slider-wrap {
   margin-left: 25px;
   width: 100%;
   
 }
-
-
 
 .hotel-slider-image {
   border-radius: 2px;
@@ -364,7 +155,88 @@
   border: 2px solid #f3c653;
 }
 
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .rest-h2 {
+    background-color: #0e0c07;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hmpg-2-4/restaurant-back-desktop@2x.jpg'); 
+      
+  }
+
+  .hotel-h2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('../img/hmpg-2-4/hotel-back-desktop@2x.jpg');
+      
+      
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.rest-h2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../img/hmpg-2-4/restaurant-back-tablet@2x.jpg');}
+
+    .hotel-h2 {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url('../img/hmpg-2-4/hotel-back-tablet@2x.jpg');
+    }
+    
+}
+
+/*MOBILE ONLY*/
+
 @media screen and (max-width: 1023px) {
+  .rest-h2, 
+  .hotel-h2 {
+    background-image: none;
+  }
+
+  .rest-container {
+      background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../img/hmpg-2-4/restaurant-back.jpg');
+    background-size: 414px;
+    background-position: top left;
+    
+    
+  }
+
+  .hotel-container {
+    background-position: top;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../img/hmpg-2-4/hotel-back.jpg');
+    background-size: 414px;
+    background-position: top left;
+    
+  }
+
   .small-slider-image {
     display: none;
   }
@@ -381,12 +253,101 @@
   }
   .hotel-slider-wrap {
     translate: -25px;
+    justify-content: end;
   }
- 
-  
 }
 
+@media screen and (max-width: 1023px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .rest-container {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hmpg-2-4/restaurant-back@2x.jpg');
+      
+      
+      
+  }
+  .hotel-container {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('../img/hmpg-2-4/hotel-back@2x.jpg');
+  }
+}
+
+
+/*TABLET*/
+
 @media screen and (min-width: 1024px) {
+  .rest-container,
+  .hotel-container {
+    background-image: none;
+    max-width: 960px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+
+
+  .rest-h2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hmpg-2-4/restaurant-back-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .hotel-h2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('../img/hmpg-2-4/hotel-back-tablet.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .logo-h2 {
+    font-size: 64px;
+    line-height: 1.078;
+  }
+
+  .title-h2 {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+
+  .text-h2 {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .textblock {
+    max-width: 610px;
+    margin-bottom: 40px;
+    margin-right: 89px;
+  }
+
+  .textblock-hotel {
+    max-width: 549px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+  }
+
+  .textblock-hotel .logo-h2 {
+    translate: 20px;
+  }
+
   .rest-png-image, 
   .hotel-png-image {
     display: none;
@@ -447,9 +408,45 @@
   .slider-btn-wrap-right {
     margin: 24px 32px 0 0;
   }
+  
 }
 
+
+
+  
+
+
+
+
+/*DESKTOP*/
+
+
 @media screen and (min-width: 1280px) {
+  .rest-h2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hmpg-2-4/restaurant-back-desktop.jpg');
+  }
+
+  .hotel-h2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../img/hmpg-2-4/hotel-back-desktop.jpg');
+  }
+
+  .rest-container,
+  .hotel-container {
+    max-width: 1140px;
+    overflow: visible;  
+    background-image: none;
+  }
+
   .small-slider-image.dynamic {
     width: 270px;
   }
@@ -477,4 +474,17 @@
     margin-right: 33px;
   }
 
+  .textblock {
+    margin-right: auto;
+    margin-left: 253px;
+  }
+
+  .textblock-hotel {
+    max-width: 595px;
+    margin-right: 253px;
+    margin-left: auto;
+  }
+
 }
+
+
