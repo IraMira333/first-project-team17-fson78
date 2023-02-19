@@ -53,7 +53,7 @@
   padding-bottom: 40px;
   background-color: #0e0c07;
 }
-.container.flex{
+.container.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
