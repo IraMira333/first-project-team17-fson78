@@ -26,12 +26,6 @@
   display: none;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 /* first section */
 .first-section {
   background-color: #fffdee;
@@ -44,9 +38,9 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  padding-top: 16px;
   width: 198px;
   margin: 0;
+  margin-top: 16px;
 }
 
 .header-tree {
@@ -56,11 +50,10 @@
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
-
   width: 134px;
   margin: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .text {
@@ -68,10 +61,6 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 28px;
 }
 
 .grey-text {
@@ -93,6 +82,7 @@
 
 .first-image {
   margin-left: auto;
+  margin-top: 28px;
   margin-bottom: 32px;
   width: 244px;
   height: 322px;
@@ -121,7 +111,7 @@
 }
 
 .pictures-list .item:not(:last-child) {
-  padding-right: 25px;
+  margin-right: 25px;
   margin-left: auto;
 }
 
@@ -149,11 +139,13 @@
 
 .third-section .header-two {
   margin-left: auto;
-  padding-top: 18px;
+  margin-top: 18px;
 }
 
 .third-section .header-tree {
   margin-left: auto;
+  margin-top: 6px;
+  margin-bottom: 16px;
 }
 
 .third-section .grey-text {
@@ -161,8 +153,8 @@
 }
 
 .third-section .brown-text {
-  padding-left: 0;
-  margin-right: 20px;
+  margin-left: 0;
+  margin-right: 21px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -181,7 +173,7 @@
 }
 
 .third-section .pictures-list .item:not(:last-child) {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .third-section .arrows-list .item:not(:last-child) {
@@ -197,12 +189,12 @@
   }
 
   .sec-container {
-    max-width: 1024px;
+    max-width: 930px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .first-section {
-    padding-left: 47px;
-    padding-right: 60px;
     overflow: visible;
   }
 
@@ -212,25 +204,26 @@
 
   .about-restaurant {
     width: 439px;
-    padding-top: 120px;
+    margin-top: 120px;
     margin-right: 26px;
   }
 
   .header-two {
     width: 317px;
-    padding-top: 0;
+    margin-top: 0;
     font-size: 32px;
   }
 
   .header-tree {
     font-size: 64px;
     width: 179px;
+    margin-top: 4px;
+    margin-bottom: 24px;
   }
 
   .text {
     font-size: 16px;
     width: 439px;
-    padding-bottom: 0;
   }
 
   .grey-text {
@@ -249,6 +242,7 @@
     margin-bottom: 0;
     width: 400px;
     height: 524px;
+    z-index: 2;
   }
 
   .second-image {
@@ -268,7 +262,7 @@
   }
 
   .pictures-list .item:not(:last-child) {
-    padding-right: 40px;
+    margin-right: 40px;
     margin-left: auto;
   }
 
@@ -288,25 +282,27 @@
   }
 
   .third-section {
-    padding-right: 47px;
-    padding-left: 60px;
-    overflow: auto;
+    overflow: visible;
   }
 
   .third-section .about-restaurant {
     width: 419px;
-    padding-top: 120px;
+    margin-top: 120px;
     margin-left: 46px;
     margin-right: 0;
   }
 
   .third-section .header-two {
-    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .third-section .header-tree {
+    margin-top: 4px;
+    margin-bottom: 24px;
   }
 
   .third-section .brown-text {
     width: 312px;
-    padding-right: 0;
     margin-right: 48px;
     margin-left: auto;
   }
@@ -314,6 +310,7 @@
   .third-section .first-image {
     margin-left: auto;
     margin-right: 0;
+    z-index: 2;
   }
 
   .third-section .pictures-list {
@@ -322,9 +319,8 @@
   }
 
   .third-section .pictures-list .item:not(:last-child) {
-      margin-right: auto;
-      padding-left: 40px;
-      padding-right: 0;
+    margin-right: auto;
+    margin-left: 40px;
   }
 }
 
@@ -332,12 +328,12 @@
   /* first section */
 
   .sec-container {
-    max-width: 1280px;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .first-section {
-    padding-left: 85px;
-    padding-right: 85px;
     overflow: visible;
   }
 
@@ -347,25 +343,25 @@
 
   .about-restaurant {
     width: 518px;
-    padding-top: 120px;
+    margin-top: 120px;
     margin-right: 37px;
   }
 
   .header-two {
     width: 317px;
-    padding-top: 0;
     font-size: 32px;
   }
 
   .header-tree {
     font-size: 64px;
     width: 179px;
+    margin-top: 4px;
+    margin-bottom: 24px;
   }
 
   .text {
     font-size: 16px;
     width: 439px;
-    padding-bottom: 0;
   }
 
   .grey-text {
@@ -379,8 +375,8 @@
   }
 
   .first-section .brown-text {
-      margin-top: 121px;
-      margin-bottom: auto;
+    margin-top: 121px;
+    margin-bottom: auto;
   }
 
   .first-image {
@@ -389,6 +385,7 @@
     margin-bottom: 0;
     width: 460px;
     height: 574px;
+    z-index: 2;
   }
 
   .second-image {
@@ -408,13 +405,13 @@
   }
 
   .pictures-list .item:not(:last-child) {
-    padding-right: 40px;
+    margin-right: 40px;
     margin-left: auto;
   }
 
   .arrows-list {
     margin-top: 36px;
-    margin-bottom: 36px;
+    margin-bottom: 50px;
   }
 
   /* third section */
@@ -428,20 +425,23 @@
   }
 
   .third-section {
-    padding-right: 85px;
-    padding-left: 85px;
     overflow: visible;
   }
 
   .third-section .about-restaurant {
     width: 518px;
-    padding-top: 120px;
+    margin-top: 120px;
     margin-left: 67px;
     margin-right: 0;
   }
 
   .third-section .header-two {
-    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .third-section .header-tree {
+    margin-top: 4px;
+    margin-bottom: 24px;
   }
 
   .third-section .brown-text {
@@ -456,6 +456,7 @@
     margin-top: -25px;
     margin-left: auto;
     margin-right: 0;
+    z-index: 2;
   }
 
   .third-section .second-image {
@@ -471,8 +472,7 @@
   }
 
   .third-section .pictures-list .item:not(:last-child) {
-      margin-right: auto;
-      padding-left: 40px;
-      padding-right: 0;
+    margin-right: auto;
+    margin-left: 40px;
   }
 }
