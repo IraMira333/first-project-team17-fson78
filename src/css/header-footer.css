@@ -13,6 +13,7 @@
   line-height: calc(39 / 36);
   letter-spacing: 0.3em;
   color: #ffffff;
+  margin-top: 16px;
 }
 
 .hotel-tel {
@@ -25,6 +26,7 @@
   height: 24px;
 }
 .header-nav {
+  margin-top: 28px;
 }
 .header-list {
   display: flex;
@@ -145,6 +147,10 @@
   .header-logo {
     font-size: 40px;
     line-height: calc(43 / 40);
+    margin-top: 24px;
+  }
+  .header-nav{
+    margin-top: 30px;
   }
   .header-text {
     font-size: 20px;
@@ -230,6 +236,7 @@
   .header-soc {
     position: static;
     margin-left: 140px;
+    margin-top: 38px;
   }
   .container {
     width: 1140px;
