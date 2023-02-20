@@ -25,7 +25,7 @@
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   color: #494848;
-  padding-bottom: 16px;
+  margin-bottom: 12px;
 }
 .contacts-paragraph {
   font-family: 'Montserrat', sans-serif;
@@ -35,7 +35,7 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
   color: var(--color-main);
-  padding-bottom: 24px;
+  margin-bottom: 16px;
 }
 .contacts-list {
   display: flex;
@@ -70,7 +70,7 @@
   padding-top: 12px;
   padding-bottom: 11px;
   display: flex;
-  gap: 12px;
+  gap: 11px;
 }
 .contacts-link {
   font-family: 'Montserrat';
@@ -143,17 +143,18 @@ picture .contacts-image {
     padding-top: 56px;
     padding-bottom: 40px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
   .contacts-header-first {
     font-size: 64px;
     line-height: calc(69 / 64);
+    margin-bottom: 8px;
   }
   .contacts-list {
     gap: 24px;
   }
   .contacts-paragraph {
-    padding-bottom: 52px;
+    margin-bottom: 40px;
   }
   .first-title,
   .second-title {
@@ -168,16 +169,21 @@ picture .contacts-image {
     align-items: flex-start;
     flex-direction: column;
   }
+  .contacts-inner-list {
+    gap: 16px;
+  }
   .map-link {
     width: auto;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    padding-left: 44px;
   }
   .contacts-image {
     width: 535px;
     height: 412px;
-    margin-left: auto;
   }
   .contact-picture-wrap {
-    margin: auto;
     margin-left: 101px;
     margin-top: 40px;
   }
@@ -194,7 +200,7 @@ picture .contacts-image {
     height: auto;
   }
   .contact-picture-wrap {
-    margin-left: 108px;
-    margin-top: 24px;
+    margin-left: 191px;
+    margin-top: 8px;
   }
 }
