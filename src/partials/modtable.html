@@ -17,7 +17,7 @@
           pattern="^[А-Яа-яЁё\s]+$"
           required
         />
-        <label for="name" class="modal-label">На кого забронювати номер?</label>
+        <label for="name" class="modal-label">На кого забронювати столик?</label>
       </div>
 
       <div class="form-field">
@@ -47,7 +47,7 @@
         <label for="people" class="modal-label">Столик на яку кількість осіб?</label>
       </div>
 
-      <div class="form-field">
+      <div class="form-field arrow-position">
         <input
           type="date"
           class="modal-input"
@@ -57,6 +57,9 @@
           min="2023-03-01"
           required
         />
+        <svg class="modal-svg" width="24" height="24">
+          <use href="../img/sprite-icons.svg#down-bold"></use>
+        </svg>
         <label for="data-book" class="modal-label"
           >На яку дату бронювати?</label
         >

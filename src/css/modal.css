@@ -1,7 +1,7 @@
 /* ---MODALKA-- */
 .no-scroll {
   overflow: hidden;
- }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -11,6 +11,7 @@
   background-color: rgba(14, 12, 7, 0.8);
   opacity: 1;
   visibility: visible;
+  overflow: scroll;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -29,7 +30,6 @@
   min-height: 572px;
   max-width: 712px;
   padding: 16px 15px 60px 15px;
-  overflow: auto;
   background-color: #fffdee;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -146,4 +146,18 @@
 .modal-btn:active {
   background-color: var(--color-acsent);
   color: #000000;
+}
+.arrow-position {
+  position: relative;
+}
+.modal-svg {
+  fill: var(--color-second);
+  background-color: #fffdee;
+  position: absolute;
+  right: 4px;
+  top: 35px;
+  pointer-events: none;
+}
+.select-frame {
+  background-color: #f0ecd6;
 }

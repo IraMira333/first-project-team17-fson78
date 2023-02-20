@@ -33,40 +33,47 @@
         <label for="nigths" class="modal-label">Номер телефону</label>
       </div>
 
-      <div class="form-field">
+      <div class="form-field arrow-position">
         <select id="category" name="category" class="modal-input">
-          <option value="1-berth">Двомісний номер</option>
-          <option value="2-berth-lux" selected>Двомісний люкс</option>
-          <option value="3-berth">Тримісний номер</option>
+          <option class="modal-input select-frame" value="1-berth">Двомісний номер</option>
+          <option class="modal-input select-frame" value="2-berth-lux" selected>Двомісний люкс</option>
+          <option class="modal-input select-frame" value="3-berth">Тримісний номер</option>
         </select>
+        <svg class="modal-svg" width="24" height="24">
+          <use href="../img/sprite-icons.svg#down-bold"></use>
+        </svg>
         <label for="category" class="modal-label">Категорія номеру</label>
       </div>
 
-      <div class="form-field">
+      <div class="form-field arrow-position">
         <input
           type="date"
-          class="modal-input"
+          class="modal-input "
           name="data-in"
           id="data-in"
           placeholder="2023-03-01"
           min="2023-03-01"
-
           required
         />
+        <svg class="modal-svg" width="24" height="24">
+          <use href="../img/sprite-icons.svg#down-bold"></use>
+        </svg>
         <label for="data-in" class="modal-label">Дата заїзду</label>
       </div>
 
-      <div class="form-field">
+      <div class="form-field arrow-position">
         <input
           type="date"
-          class="modal-input"
+          class="modal-input "
           name="data-out"
           id="data-out"
           placeholder="2023-03-02"
           min="2023-03-02"
-
           required
         />
+        <svg class="modal-svg" width="24" height="24">
+          <use href="../img/sprite-icons.svg#down-bold"></use>
+        </svg>
         <label for="data-out" class="modal-label">Дата виїзду</label>
       </div>
 
@@ -74,4 +81,3 @@
     </form>
   </div>
 </div>
-
