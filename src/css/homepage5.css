@@ -154,7 +154,7 @@ picture .contacts-image {
     gap: 24px;
   }
   .contacts-paragraph {
-    margin-bottom: 40px;
+    margin-bottom: 52px;
   }
   .first-title,
   .second-title {
@@ -185,7 +185,7 @@ picture .contacts-image {
   }
   .contact-picture-wrap {
     margin-left: 101px;
-    margin-top: 40px;
+    margin-top: 13px;
   }
 }
 
@@ -195,12 +195,19 @@ picture .contacts-image {
   .contacts-container {
     padding-bottom: 73px;
   }
+  .contacts-header-first {
+    margin-bottom: 16px;
+  }
+  .contacts-paragraph {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
   .contacts-image {
     width: auto;
     height: auto;
   }
   .contact-picture-wrap {
-    margin-left: 191px;
+    margin-left: 108px;
     margin-top: 8px;
   }
 }
