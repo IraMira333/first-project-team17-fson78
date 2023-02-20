@@ -5,7 +5,7 @@
   line-height: 1.15;
   color: #b4b4b4;
 
-  padding-top: 32px;
+  margin-top: 32px;
 }
 .logo-mi {
   font-family: 'Mimino-700';
@@ -66,7 +66,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  padding-bottom: 32px;
 }
 .btn {
   background: #000000;
@@ -78,6 +77,9 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #f3c653;
+}
+.btn:last-child {
+  margin-bottom: 32px;
 }
 .btn:hover,
 .btn:focus {
@@ -109,6 +111,8 @@
   column-gap: 16px;
   width: 100%;
   align-items: flex-end;
+}
+.wrap-img-swipe-1 {
   margin-top: 32px;
 }
 
@@ -138,6 +142,19 @@
 .descr-2 {
   margin-right: 40px;
 }
+/* .cut-img{
+  width: 100px;
+  height: 194px;
+}
+.img-cut{
+display: block;
+height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+object-position: left;
+
+} */
 
 /* --------THIRD SECTION -------------*/
 .room-for-2 {
@@ -190,7 +207,7 @@ img {
   .description {
     min-width: 400px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     width: 439px;
     margin-top: 16px;
     margin-bottom: 0;
@@ -238,7 +255,7 @@ img {
     margin: 0;
     padding: 0;
     position: absolute;
-    bottom: 150px;
+    bottom: 120px;
   }
   .wrap-btn-1 {
     right: 0;
@@ -303,12 +320,16 @@ img {
     max-width: 1140px;
   }
   .pre-title {
-    padding-top: 72px;
+    margin-top: 72px;
   }
   .title {
     font-size: 36px;
     line-height: 40px;
     margin-top: 72px;
+  }
+  .description {
+    font-weight: 700;
+    width: 400px;
   }
   .img-1,
   .img-3 {
@@ -331,6 +352,6 @@ img {
     margin-top: 24px;
   }
   .wrap-btn {
-    bottom: 190px;
+    bottom: 160px;
   }
 }
