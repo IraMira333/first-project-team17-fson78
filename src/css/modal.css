@@ -172,7 +172,12 @@
 .select-frame {
   background-color: #f0ecd6;
 }
-
+.special-tablet {
+  display: none;
+}
+.special-mob {
+  display: flex;
+}
 @media screen and (min-width: 1024px) {
   .modal-tablet {
     display: flex;
@@ -207,10 +212,15 @@
     display: block;
     color: transparent;
   }
-}
+  .special-mob {
+    display: none;
+  }
+  .special-tablet {
+    display: flex;
+  }
 
 .modal-btn {
 width: 592px;
 font-size: 24px;
 line-height: 1.21;
-}
+}}
