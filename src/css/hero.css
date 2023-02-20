@@ -298,6 +298,9 @@
         position: static;
     }
     .map-address {
+        /* display: block; */
+        padding-left: 34px;
+        padding-left: 0;
         position: relative;
         /* position: absolute; */
         /* top: 118px; */
@@ -307,6 +310,14 @@
         /* padding-bottom: 8px; */
         /* padding-left: 34px; */
     }
+        .icon-picture {
+            position: absolute;
+            top: 7px;
+            left: -47px;
+            fill: #F3C653;
+            width: 20px;
+            height: 20px;
+        }
     .hero-btns {
 display: flex;
 flex-direction: row;
@@ -379,7 +390,7 @@ flex-direction: row;
     }
     
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
+    (min-resolution: 288dpi),
     (min-resolution: 2dppx) {
         .hotel-hero {
             background-image: linear-gradient(to right,
@@ -422,7 +433,7 @@ flex-direction: row;
         }
     
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
+    (min-resolution: 288dpi),
     (min-resolution: 2dppx) {
         .rest-hotel {
             background-image: linear-gradient(to right,
@@ -458,7 +469,7 @@ flex-direction: row;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
+(min-resolution: 288dpi),
 (min-resolution: 2dppx) {
     .rest-hero {
         background-image: linear-gradient(to right,
@@ -492,7 +503,7 @@ flex-direction: row;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
+(min-resolution: 288dpi),
 (min-resolution: 2dppx) {
     .hotel-hero {
         background-image: linear-gradient(to right,
@@ -501,4 +512,17 @@ flex-direction: row;
             url(../img/hero-img/bg-hotel@3x.jpg);
     }
 }
-}}
+}
+.title-hero {
+    margin-bottom: 32px;
+}
+.subtitle-hero {
+    margin-bottom: 64px;
+}
+.heading-hero {
+    margin-bottom: 115px;
+}
+.sub-hotel {
+    margin-bottom: 199px;
+}
+}
