@@ -308,11 +308,7 @@
         url(../img/hero-img/bg-hero-index-tab@3x.jpg);
     }
   }
-  .hero {
-    /* position: relative; */
-    /* min-width: 960px; */
-    height: 720px;
-  }
+  
   .buttons-hero {
     display: flex;
     flex-direction: row;
@@ -342,7 +338,7 @@
   .hero-btns {
     display: flex;
     flex-direction: row;
-    row-gap: 40px;
+
   }
 
 
@@ -568,5 +564,8 @@
   }
   .hero-soc {
     display: none;
+  }
+  .hero-btn {
+    row-gap: 40px;
   }
 }
