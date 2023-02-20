@@ -97,11 +97,13 @@
 .hero-room-soc {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     margin-top: 16px;
-    
 }
 .hero-room-soc-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
     fill: var(--color-acsent);
 }
 .hero-room-map {
@@ -206,7 +208,7 @@
     }
     .hero-room-soc {
         flex-direction: row;
-        gap: 22px;
+        gap: 20px;
     
     }
     .hero-room-link {
