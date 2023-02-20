@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modroom>
   <div class="modal">
-    <button class="modal-close button" data-modal-close>
+    <button class="modal-close button" data-modroom-close>
       <svg width="24" height="24" class="icon-modal-close">
         <use href="../img/sprite-icons.svg#close"></use>
       </svg>
@@ -34,12 +34,12 @@
       </div>
 
       <div class="form-field">
-        <select id="category" name="category">
+        <select id="category" name="category" class="modal-input">
           <option value="1-berth">Двомісний номер</option>
           <option value="2-berth-lux" selected>Двомісний люкс</option>
           <option value="3-berth">Тримісний номер</option>
         </select>
-        <label for="category">Категорія номеру</label>
+        <label for="category" class="modal-label">Категорія номеру</label>
       </div>
 
       <div class="form-field">
