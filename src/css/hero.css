@@ -281,7 +281,7 @@
     width: 325px;
     margin-left: 0;
     margin-bottom: 14px;
-    max-width: 325px;
+    max-width: 301px;
 }
 
 .text-room {
@@ -543,7 +543,7 @@
     .room-btn {
         position: absolute;
         bottom: -40px;
-        right: 0px;
+        right: 15px;
     }
 .sub-cont {
     position: relative;
