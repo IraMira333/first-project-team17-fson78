@@ -2,9 +2,7 @@
 .header {
   background-color: darkgray;
 }
-.container-header {
-  padding: 0 15px;
-}
+
 .header-logo {
   font-family: 'Mimino-700', sans-serif;
   font-style: normal;
@@ -73,7 +71,8 @@
   padding-bottom: 40px;
   background-color: #0e0c07;
 }
-.container-footer {
+.container-footer,
+.container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
