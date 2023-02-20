@@ -57,7 +57,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.6667;
+  line-height: 1.16667;
   letter-spacing: 0.05em;
   margin-top: 20px;
   display: flex;
@@ -71,7 +71,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.6667;
+  line-height: 1.16667;
   letter-spacing: 0.05em;
   background-color: transparent;
   color: var(--color-main);
@@ -102,7 +102,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--color-second);
   margin-top: 8px;
