@@ -60,7 +60,12 @@
 .icon-modal-close:active {
   stroke: #808080;
 }
-
+.modal-input.special {
+  display: none;
+}
+.modal-label.special {
+  display: none;
+}
 .modal-title {
   font-family: 'Times New Roman';
   font-style: normal;
@@ -177,7 +182,7 @@
   }
   .modal {
     min-height: 489px;
-    padding: 16px 60px 60px 60px;
+    padding: 16px 16px 60px 60px;
   }
   .modal-input {
     width: 288px;
@@ -187,6 +192,7 @@
   .modal-title {
     font-size: 40px;
     line-height: 1.15;
+    margin-right: 44px;
   }
 
   .modal-svg {
@@ -194,9 +200,17 @@
   }
 
   .modal-input.special {
+    display: block;
     border: 1px solid transparent;
   }
   .modal-label.special {
+    display: block;
     color: transparent;
   }
+}
+
+.modal-btn {
+width: 592px;
+font-size: 24px;
+line-height: 1.21;
 }
