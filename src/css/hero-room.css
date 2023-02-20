@@ -22,14 +22,17 @@
             url(../img/hero-room/room-mob@2x.jpg);
     }
 }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 3),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) 
+{
     .hero-room {
         background-image:
             url(../img/hero-room/room-mob@3x.jpg);
     }
 }
+
+
 .hero-room-container{
     position: relative;
     padding-left: 15px;
@@ -79,17 +82,23 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--color-acsent);
+
+    
+    position: absolute;        
+    right: 15px;
+    bottom: 40px;
 }
-.hero-room-soc-btn {
-    display: flex;
-    gap: 70px;
-    margin-top: 16px;
-    align-items: center;
+.hero-room-btn:hover,
+.hero-room-btn:focus {
+    background-color: var(--color-acsent);
+    border: 1px solid #F3C653;
+    color: #000000;
 }
 .hero-room-soc {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 16px;
     
 }
 .hero-room-soc-icon {
@@ -152,9 +161,9 @@
                 url(../img/hero-room/room-tab@2x.jpg);
         }
     }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
         .hero-room {
             background-image:
                 url(../img/hero-room/room-tab@3x.jpg);
@@ -178,14 +187,11 @@
         max-width: 400px;
     }
     .hero-room-btn {
-        position: absolute;        
-        margin: 0px;
-        right: 15px;
         bottom: 62px;
     }
     .hero-room-map {
         position:static;
-        padding-left: 30px;
+        padding-left: 8px;
         padding-top: 8px;
         padding-right: 8px;
         padding-bottom: 8px;
@@ -205,12 +211,12 @@
     }
     .hero-room-link {
         position: relative;
-        padding-left: 44px;
-        display: block;
         
     }
     .hero-room-icon-location {
         position: absolute;
+        height: 24px;
+        width: 24px;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
@@ -235,9 +241,9 @@
                 url(../img/hero-room/room-desk@2x.jpg);
         }
     }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
         .hero-room {
             background-image:
                 url(../img/hero-room/room-desk@3x.jpg);
@@ -246,7 +252,7 @@
     .hero-room-container {
         width: 1140px;
         padding-top: 265px;
-        padding-bottom: 36px;
+        padding-bottom: 48px;
     }
     .hero-room-info {
         margin-top: 72px;
@@ -255,7 +261,13 @@
         font-size: 16px;
     }
     .hero-room-btn {
-        bottom: 66px;
+        position: static;
+    }
+    .hero-room-btn-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     .hero-room-map {
         display: none;
@@ -265,7 +277,7 @@
     }
     .hero-room-map-soc {
         margin: 0;
-        gap: 0;
+        height: 0;
     }
 
     
