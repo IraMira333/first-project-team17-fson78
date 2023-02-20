@@ -2,7 +2,7 @@
 .header {
   background-color: darkgray;
 }
-.container {
+.container-header {
   padding: 0 15px;
 }
 .header-logo {
@@ -73,7 +73,7 @@
   padding-bottom: 40px;
   background-color: #0e0c07;
 }
-.container {
+.container-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,7 +131,8 @@
 }
 
 @media screen and (min-width: 414px) {
-  .container {
+  .container-footer,
+  .container-header {
     width: 414px;
     margin: 0 auto;
   }
@@ -190,7 +191,8 @@
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .container {
+  .container-footer,
+  .container-header {
     width: 960px;
     margin: 0 auto;
   }
@@ -238,7 +240,8 @@
     margin-left: 140px;
     margin-top: 38px;
   }
-  .container {
+  .container-footer,
+  .container-header {
     width: 1140px;
     margin: 0 auto;
   }
