@@ -1,6 +1,6 @@
 /*====Plain styles for phones (max-width: 1024px)======*/
 
-.container {
+.contacts-container {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -139,7 +139,7 @@ picture .contacts-image {
 /*====Styles for tablets (min-width: 1024px and max-width: 1279px)======*/
 
 @media screen and (min-width: 1024px) {
-  .container {
+  .contacts-container {
     padding-top: 56px;
     padding-bottom: 40px;
     display: flex;
@@ -186,6 +186,9 @@ picture .contacts-image {
 /*====Styles for desktops (min-width: 1280px)======*/
 
 @media screen and (min-width: 1280px) {
+  .contacts-container {
+    padding-bottom: 73px;
+  }
   .contacts-image {
     width: auto;
     height: auto;
