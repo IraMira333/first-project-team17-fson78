@@ -1,0 +1,266 @@
+/* ----------HEADER---------- */
+.header {
+  position: absolute;
+  z-index: 0;
+  /* background-color: darkgray; */
+}
+
+.header-logo {
+  font-family: 'Mimino-700', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(39 / 36);
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.hotel-tel {
+  display: flex;
+  gap: 6px;
+}
+.rest-tel {
+  display: flex;
+  gap: 6px;
+  height: 24px;
+}
+.header-nav {
+  margin-top: 28px;
+}
+.header-list {
+  display: flex;
+  gap: 20px;
+}
+
+.header-soc {
+  display: none;
+}
+.header-tel {
+  display: block;
+  width: 100%;
+}
+
+.header-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--color-acsent);
+}
+.tel-text {
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.header-icon {
+  fill: var(--color-acsent);
+}
+/* ----------FOOTER---------- */
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #0e0c07;
+}
+.container-footer,
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.logo {
+  font-family: 'Mimino-700', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: var(--color-acsent);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.footer-nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-acsent);
+}
+
+.footer-soc-icon {
+  fill: var(--color-acsent);
+}
+.footer-soc {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.footer-soc-link {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-acsent);
+}
+
+.hiden {
+  display: none;
+}
+
+@media screen and (min-width: 414px) {
+  .container-footer,
+  .container-header {
+    width: 414px;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-left: 44px;
+  }
+  .footer-mob {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    left: 32px;
+  }
+  .header-logo {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    margin-top: 24px;
+  }
+  .header-nav {
+    margin-top: 30px;
+  }
+  .header-text {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+  .tel-text {
+    display: block;
+  }
+  .header-tel {
+    display: flex;
+    height: 40px;
+    gap: 4px;
+    align-items: center;
+  }
+  .header-icon {
+    margin-left: 8px;
+  }
+  .hotel-tel {
+    align-items: center;
+    gap: 32px;
+  }
+  .rest-tel {
+    gap: 32px;
+    height: 40px;
+    align-items: center;
+  }
+  .header-list {
+    gap: 72px;
+  }
+  .header-item-tel {
+    width: 144px;
+    height: 40px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .container-footer,
+  .container-header {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .logo {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-left: 107px;
+  }
+  .footer-soc-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .footer-soc-item {
+    width: 144px;
+    height: 40px;
+    padding: 0 12px;
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+  }
+  .footer-mob {
+    display: flex;
+    gap: 137px;
+    margin-right: 75px;
+  }
+  .footer-nav {
+    margin-bottom: 0;
+  }
+  .footer-soc {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hiden {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    left: 70px;
+  }
+  .header-logo {
+    margin-right: 135px;
+  }
+  .header-soc {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+  }
+  .header-soc {
+    position: static;
+    margin-left: 140px;
+    margin-top: 38px;
+  }
+  .container-footer,
+  .container-header {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-left: 131px;
+  }
+  .footer-mob {
+    gap: 199px;
+    margin-right: 101px;
+  }
+}

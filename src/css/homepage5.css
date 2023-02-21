@@ -1,0 +1,213 @@
+/*====Plain styles for phones (max-width: 1024px)======*/
+
+.contacts-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.contacts-header-first {
+  font-family: 'Mimino-700', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: #494848;
+  margin-bottom: 12px;
+}
+.contacts-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--color-main);
+  margin-bottom: 16px;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contacts-wrap-list {
+  display: flex;
+  align-items: center;
+}
+.contacts-header-second {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--color-second);
+  display: flex;
+  align-items: center;
+}
+.first-title {
+  margin-right: 22px;
+}
+.second-title {
+  margin-right: 54px;
+}
+.contacts-inner-list {
+  background: #fff;
+  border: 0.5px solid var(--color-acsent);
+  border-radius: 2px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  display: flex;
+  gap: 11px;
+}
+.contacts-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  color: var(--color-main);
+  position: relative;
+}
+.contacts-icon {
+  fill: var(--color-second);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  left: 6px;
+  top: -20%;
+}
+.last-item {
+  display: flex;
+  margin-left: 124px;
+  margin-top: 16px;
+}
+.first-link {
+  padding-left: 40px;
+  padding-right: 8px;
+}
+.second-link {
+  padding-left: 40px;
+}
+.third-link {
+  padding-right: 8px;
+}
+.map-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.01em;
+  background: #fff;
+  width: 100%;
+  border: 0.5px solid var(--color-acsent);
+  border-radius: 2px;
+  padding-right: 33px;
+  padding-left: 44px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+}
+.map-icon {
+  position: absolute;
+  left: 3%;
+  top: 30%;
+}
+.contact-picture-wrap {
+  margin-top: 32px;
+}
+picture .contacts-image {
+  border: 1px solid #bababa;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+/*====Styles for tablets (min-width: 1024px and max-width: 1279px)======*/
+
+@media screen and (min-width: 1024px) {
+  .contacts-container {
+    padding-top: 56px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .contacts-header-first {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 8px;
+  }
+  .contacts-list {
+    gap: 24px;
+  }
+  .contacts-paragraph {
+    margin-bottom: 52px;
+  }
+  .first-title,
+  .second-title {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .last-item {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+  .contacts-wrap-list {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .contacts-inner-list {
+    gap: 16px;
+  }
+  .map-link {
+    width: auto;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    padding-left: 44px;
+  }
+  .contacts-image {
+    width: 535px;
+    height: 412px;
+  }
+  .contact-picture-wrap {
+    margin-left: 101px;
+    margin-top: 13px;
+  }
+}
+
+/*====Styles for desktops (min-width: 1280px)======*/
+
+@media screen and (min-width: 1280px) {
+  .contacts-container {
+    padding-bottom: 73px;
+  }
+  .contacts-header-first {
+    margin-bottom: 16px;
+  }
+  .contacts-paragraph {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+  .contacts-image {
+    width: auto;
+    height: auto;
+  }
+  .contact-picture-wrap {
+    margin-left: 108px;
+    margin-top: 8px;
+  }
+}
