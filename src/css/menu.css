@@ -1,7 +1,8 @@
 .menu-resto {
   font-family: 'Times New Roman';
   background: #f0ecd6;
-  outline: 1px solid red;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .menu-resto-title {
   font-weight: 700;
@@ -83,12 +84,14 @@
   letter-spacing: 0.02em;
   color: #f3c653;
   padding: 14px 24px;
-  }
+}
 /*=============================MEDIA=========================*/
 @media (min-width: 320px) {
-  .container {
+  .menu-container {
     width: 100%;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .menu-resto-title {
     padding-bottom: 32px;
@@ -123,7 +126,7 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
     padding-right: 124px;
-    }
+  }
   .napoi {
     font-size: 14px;
     line-height: 1.21;
@@ -132,16 +135,15 @@
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {
-  .zakaz-stola-btn {
+  .menu-btn {
     margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 74px;
-    margin-right: 74px;
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (min-width: 414px) {
-  .container {
+  .menu-container {
     width: 414px;
     margin: 0 auto;
   }
@@ -154,9 +156,12 @@
 }
 
 @media (min-width: 1024px) {
-  .container {
+  .menu-container {
     width: 960px;
-    margin: 0 auto;
+  }
+  .menu-resto {
+    padding-top: 58px;
+    padding-bottom: 40px;
   }
   .menu {
     display: flex;
@@ -188,17 +193,19 @@
   .menu-resto-title {
     padding-bottom: 40px;
   }
-  .zakaz-stola-btn {
-    margin-top: 33px;
-    margin-bottom: 40px;
-    margin-left: 694px;
+  .menu-btn {
+    margin-top: 32px;
+     display: flex;
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 1280px) {
-  .container {
+  .menu-container {
     width: 1140px;
-    margin: 0 auto;
+  }
+  .menu-resto {
+    padding-bottom: 60px;
   }
   .menu {
     gap: 140px;
@@ -226,10 +233,5 @@
     font-size: 16px;
     line-height: 1.25;
     padding-right: 136px;
-  }
-  .zakaz-stola-btn {
-    margin-top: 32px;
-    margin-bottom: 60px;
-    margin-left: 874px;
   }
 }
