@@ -1,102 +1,277 @@
 <section class="rest-h2">
-    <div class="container rest-container">
-      <div class="textblock">
-        <p class="logo-h2">MIMIHO</p>
-        <h2 class="title-h2">Ресторан</h2>
-        <p class="text-h2">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit.
-        </p>
+  <div class="container rest-container">
+    <div class="textblock">
+      <p class="logo-h2">MIMIHO</p>
+      <h2 class="title-h2">Ресторан</h2>
+      <p class="text-h2">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </p>
+    </div>
+    <div class="tablet-content-wrap">
+      <div class="big-slider-wrap swiper">
+        <ul class="rest-slider-wrap swiper-wrapper">
+          <li class="rest-slider-image first-img swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ../img/hmpg-2-4/dish1desktop.jpg    1x,
+                  ../img/hmpg-2-4/dish1desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 200px)"
+                srcset="
+                  ../img/hmpg-2-4/dish1.jpg    1x,
+                  ../img/hmpg-2-4/dish1@2x.jpg 2x
+                "
+              />
+              <img src="../img/hmpg-2-4/dish1.jpg" alt="steak" width="274" />
+            </picture>
+          </li>
+          <!-- <li class="rest-png-image swiper-slide">
+            <img src="../img/hmpg-2-4/dish2.png" alt="breakfast" />
+          </li> -->
+
+          <li class="small-slider-image mobile-visible swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ../img/hmpg-2-4/dish2desktop.jpg    1x,
+                  ../img/hmpg-2-4/dish2desktop@2x.jpg 2x
+                "
+              />
+
+              <img
+                src="../img/hmpg-2-4/dish2desktop.jpg"
+                alt="flatbread"
+                width="162"
+              />
+            </picture>
+          </li>
+
+          <li class="small-slider-image dynamic swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ../img/hmpg-2-4/dish3desktop.jpg    1x,
+                  ../img/hmpg-2-4/dish3desktop@2x.jpg 2x
+                "
+              />
+
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ../img/hmpg-2-4/dish3tablet.jpg    1x,
+                  ../img/hmpg-2-4/dish3tablet@2x.jpg 2x
+                "
+              />
+              <img src="../img/hmpg-2-4/dish3tablet.jpg" alt="healthy bowl" />
+            </picture>
+          </li>
+
+          <li
+            class="rest-slider-image cropped swiper-slide"
+            style="width: 270px"
+          >
+            <picture>
+              <source
+                srcset="
+                  ../img/hmpg-2-4/dish6.jpg    1x,
+                  ../img/hmpg-2-4/dish6@2x.jpg 2x
+                "
+              />
+
+              <img
+                src="../img/hmpg-2-4/dish6.jpg"
+                alt="breakfast"
+                width="270"
+              />
+            </picture>
+          </li>
+
+          <li class="rest-slider-image cropped swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ../img/hmpg-2-4/dish7.jpg    1x,
+                  ../img/hmpg-2-4/dish7@2x.jpg 2x
+                "
+              />
+
+              <img
+                src="../img/hmpg-2-4/dish7.jpg"
+                alt="breakfast"
+                width="270"
+              />
+            </picture>
+          </li>
+
+          <li class="rest-slider-image cropped swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ../img/hmpg-2-4/dish8.jpg    1x,
+                  ../img/hmpg-2-4/dish8@2x.jpg 2x
+                "
+              />
+
+              <img
+                src="../img/hmpg-2-4/dish8.jpg"
+                alt="breakfast"
+                width="270"
+              />
+            </picture>
+          </li>
+
+          <li class="rest-slider-image cropped swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ../img/hmpg-2-4/dish9.jpg    1x,
+                  ../img/hmpg-2-4/dish9@2x.jpg 2x
+                "
+              />
+
+              <img
+                src="../img/hmpg-2-4/dish9.jpg"
+                alt="breakfast"
+                width="270"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <div class="slider-btn-wrap">
+          <button class="swipe-left swiper-button-prev">
+            <svg height="32px" width="30px">
+              <use href="../img/sprite-icons.svg#arrow-left"></use>
+            </svg>
+          </button>
+
+          <button class="swipe-right swiper-button-next">
+            <svg height="32px" width="30px">
+              <use href="../img/sprite-icons.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="tablet-content-wrap">
-        <div class="big-slider-wrap">
-          <ul class="rest-slider-wrap">
-            <li class="rest-slider-image">
-              <picture>
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ../img/hmpg-2-4/dish1desktop.jpg    1x,
-                    ../img/hmpg-2-4/dish1desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 200px)"
-                  srcset="
-                    ../img/hmpg-2-4/dish1.jpg    1x,
-                    ../img/hmpg-2-4/dish1@2x.jpg 2x
-                  "
-                />
-                <img src="../img/hmpg-2-4/dish1.jpg" alt="steak" width="274" />
-              </picture>
-            </li>
-            <li class="rest-png-image">              
-          
-                <img src="../img/hmpg-2-4/dish2.png" alt="breakfast"  />
-             
-            </li>
 
-            <li class="small-slider-image">
-              <picture>
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ../img/hmpg-2-4/dish2desktop.jpg    1x,
-                    ../img/hmpg-2-4/dish2desktop@2x.jpg 2x
-                  "
-                />
+      <div class="buttons-wrap">
+        <button type="button" class="rest-button">Забронювати столик</button>
 
-                <img
-                  src="../img/hmpg-2-4/dish2desktop.jpg"
-                  alt="flatbread"
-                  width="162"
-                />
-              </picture>
-            </li>
-
-            <li class="small-slider-image dynamic">
-              <picture>
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ../img/hmpg-2-4/dish3desktop.jpg    1x,
-                    ../img/hmpg-2-4/dish3desktop@2x.jpg 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="
-                    ../img/hmpg-2-4/dish3tablet.jpg    1x,
-                    ../img/hmpg-2-4/dish3tablet@2x.jpg 2x
-                  "
-                />
-                <img src="../img/hmpg-2-4/dish3tablet.jpg" alt="healthy bowl" />
-              </picture>
-            </li>
-          </ul>
-
-          <div class="slider-btn-wrap">
-            <button class="swipe-left">
-              <svg height="32px" width="30px">
-                <use href="../img/sprite-icons.svg#arrow-left"></use>
-              </svg>
-            </button>
-
-            <button class="swipe-right">
-              <svg height="32px" width="30px">
-                <use href="../img/sprite-icons.svg#arrow-right"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="buttons-wrap">
-          <button type="button" class="rest-button">Забронювати столик</button>
-
-          <a href="../restaurant.html" class="rest-button">Переглянути меню</a>
-        </div>
+        <a href="../restaurant.html" class="rest-button">Переглянути меню</a>
       </div>
     </div>
- 
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Include plugin after Swiper -->
+  <script>
+    /* ========
+Debugger plugin, simple demo plugin to console.log some of callbacks
+======== */
+    function myPlugin({ swiper, extendParams, on }) {
+      extendParams({
+        debugger: false,
+      });
+
+      on('init', () => {
+        if (!swiper.params.debugger) return;
+        console.log('init');
+      });
+      on('click', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('click');
+      });
+      on('tap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('tap');
+      });
+      on('doubleTap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('doubleTap');
+      });
+      on('sliderMove', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('sliderMove');
+      });
+      on('slideChange', () => {
+        if (!swiper.params.debugger) return;
+        console.log(
+          'slideChange',
+          swiper.previousIndex,
+          '->',
+          swiper.activeIndex
+        );
+      });
+      on('slideChangeTransitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionStart');
+      });
+      on('slideChangeTransitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionEnd');
+      });
+      on('transitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionStart');
+      });
+      on('transitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionEnd');
+      });
+      on('fromEdge', () => {
+        if (!swiper.params.debugger) return;
+        console.log('fromEdge');
+      });
+      on('reachBeginning', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachBeginning');
+      });
+      on('reachEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachEnd');
+      });
+    }
+  </script>
+
+  <script>
+    // Init Swiper
+    var spaceBetween = 20;
+
+    if (window.matchMedia('(min-width: 1024px)').matches && window.matchMedia('(max-width: 1280px)').matches) {
+      spaceBetween = 34;
+    } else if (window.matchMedia('(min-width: 1280px)').matches) {
+      spaceBetween = 87;
+    } else if (window.matchMedia('(max-width: 1024px)').matches) {
+      spaceBetween = 20;
+    }
+
+    var swiper = new Swiper('.swiper', {
+      // Install Plugin To Swiper
+      modules: [myPlugin],
+      slidesPerView: 'auto',
+
+      spaceBetween: spaceBetween,
+      
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Enable debugger
+      debugger: true,
+    });
+  </script>
 </section>
