@@ -35,7 +35,6 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #7a7a7a;
-
   margin-top: 12px;
   margin-bottom: 32px;
 }
@@ -165,18 +164,17 @@ img {
   .pre-title {
     font-size: 32px;
     line-height: 37px;
-    margin-top: 66px;
   }
 
   .logo-mi {
     font-size: 64px;
     line-height: 69px;
     margin-top: 4px;
+    margin-bottom: 62px;
   }
   .title {
     font-size: 30px;
     line-height: 34px;
-    margin-top: 62px;
   }
   .description {
     min-width: 400px;
@@ -184,7 +182,11 @@ img {
     line-height: 1.25;
     width: 439px;
     margin-top: 16px;
-    margin-bottom: 0;
+    margin-bottom: 176px;
+  }
+  .hotelsection {
+    padding-top: 62px;
+    padding-bottom: 40px;
   }
   .room-l {
     position: relative;
@@ -192,19 +194,22 @@ img {
   .img-1 {
     position: absolute;
     top: -98px;
-    left: 50%;
+    right: 80px;
     margin-top: 0;
   }
-
+  .wrap-img-swipe-1 {
+    display: flex;
+    margin-top: 0;
+  }
   .wrap-img-1 {
     column-gap: 40px;
-
-    margin-bottom: 32px;
     margin-right: 0;
     width: 100%;
+    margin-top: 0;
   }
   .swipe-1 {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    margin-top: 32px;
   }
   .btn {
     font-weight: 700;
@@ -225,7 +230,6 @@ img {
     flex-direction: column;
     width: 428px;
     align-items: end;
-    margin-top: 176px;
   }
   .wrap-btn {
     margin: 0;
@@ -234,14 +238,17 @@ img {
     bottom: 120px;
   }
   .wrap-btn-1 {
-    right: 0;
+    right: 15px;
+    bottom: 105px;
   }
   .wrap-btn-2 {
-    left: 0;
+    left: 15px;
+    bottom: 105px;
   }
   /* section2 */
   .wrap-title-2 {
     align-content: end;
+    margin-bottom: 169px;
   }
   .descr-2 {
     width: 400px;
@@ -255,19 +262,19 @@ img {
   }
   .img-2 {
     position: absolute;
-    top: -32px;
-    right: 50%;
+    top: -94px;
+    left: 82px;
     margin-top: 0;
   }
 
   .wrap-img-2 {
     column-gap: 40px;
-    margin-bottom: 32px;
     margin-left: 0;
     margin-top: 0;
   }
   .swipe-2 {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    margin-top: 32px;
   }
   .btn-swipe {
     margin: 0;
@@ -279,7 +286,6 @@ img {
     width: 428px;
     align-items: start;
     margin-left: auto;
-    margin-top: 169px;
   }
 
   /* section3 */
@@ -289,7 +295,7 @@ img {
   .img-3 {
     position: absolute;
     top: -98px;
-    left: 50%;
+    right: 65px;
     margin-top: 0;
   }
 }
