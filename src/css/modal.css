@@ -126,6 +126,9 @@
 .modal-text {
   margin-left: 0;
 }
+.modal-input.modprice-price {
+  padding-left: 12px;
+}
 .modal-form {
 }
 .form-field {
@@ -193,7 +196,9 @@
     width: 288px;
     height: 64px;
   }
-
+  .modal-input.modprice-nigth {
+    padding-left: 12px;
+  }
   .modal-title {
     font-size: 40px;
     line-height: 1.15;
