@@ -125,6 +125,12 @@
   display: block;
   width: 32px;
   height: 32px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-arrow:hover,
+.icon-arrow:focus,
+.icon-arrow,:active {
+  fill: var(--color-acsent);
 }
 
 .arrows-list .item:not(:last-child) {
