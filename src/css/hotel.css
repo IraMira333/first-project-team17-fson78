@@ -38,6 +38,10 @@
   margin-top: 12px;
   margin-bottom: 32px;
 }
+.btn-swipe {
+  margin: 0;
+  padding: 0;
+}
 /* ------SWIPE BTN-------- */
 .btn-swipe {
   background: transparent;
@@ -51,14 +55,15 @@
 }
 .swipe-1 {
   display: flex;
-  gap: 30px;
+  gap: 32px;
   margin-top: 20px;
 }
 .swipe-2 {
   display: flex;
   justify-content: end;
-  gap: 30px;
+  gap: 32px;
   margin-top: 20px;
+  margin-right: 15px;
 }
 /* ----DETAIL BTN--- */
 .wrap-btn {
@@ -131,12 +136,15 @@
   justify-content: start;
   margin-top: 32px;
 }
+.wrap-img-swipe-2 {
+  margin-right: -15px;
+}
 .wrap-img-2 {
-  margin-left: 130px;
+  margin-right: -15px;
   display: flex;
   column-gap: 16px;
   width: 100%;
-  align-items: flex-end;
+  justify-content: flex-end;
   margin-top: 32px;
 }
 
@@ -276,10 +284,6 @@ img {
     margin-bottom: 0;
     margin-top: 32px;
   }
-  .btn-swipe {
-    margin: 0;
-    padding: 0;
-  }
   .wrap-img-swipe-2 {
     display: flex;
     flex-direction: column;
@@ -300,50 +304,54 @@ img {
   }
 }
 @media screen and (min-width: 1280px) {
-  .pre-title {
-    margin-top: 72px;
-    padding-top: 0;
+  .hotelsection {
+    padding-top: 72px;
   }
   .title {
     font-size: 36px;
     line-height: 40px;
-    margin-top: 72px;
   }
   .logo-mi {
     font-size: 64px;
     line-height: 69px;
     font-weight: 700;
+    margin-bottom: 72px;
   }
   .description {
     font-weight: 700;
-    width: 440px;
-    margin-top: 24px;
-  }
-  .descr-2 {
     width: 400px;
+    margin-top: 24px;
+    margin-bottom: 188px;
+  }
+  .description.descr-2 {
+    width: 400px;
+
   }
   .img-1,
   .img-3 {
-    left: 50%;
-    top: -105px;
+    right: 95px;
+    bottom: 375px;
   }
 
   .img-2 {
-    right: 50%;
-    top: -32px;
+    left: 95px;
+    top: -104px;
   }
   .wrap-img-swipe-1 {
-    margin-top: 188px;
   }
   .wrap-img-swipe-1,
   .wrap-img-swipe-2 {
     width: 548px;
   }
   .wrap-title-2 {
-    margin-right: 50px;
+    margin-right: 57px;
+    margin-bottom: 188px;
   }
 
   .wrap-btn {
-    bottom: 160px;
+    bottom: 142px;
+  }
+  .swipe-1 {
+    margin-top: 40px;
   }
 }
