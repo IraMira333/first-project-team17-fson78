@@ -1,9 +1,7 @@
 .menu-resto {
   font-family: 'Times New Roman';
-  padding: 58px 85px 140px 85px;
   background: #f0ecd6;
   outline: 1px solid red;
-  /*position: relative;*/
 }
 .menu-resto-title {
   font-weight: 700;
@@ -11,7 +9,6 @@
   line-height: 1.16;
   padding-bottom: 40px;
 }
-
 .garychi-stravu {
   font-weight: 700;
   font-size: 24px;
@@ -32,7 +29,6 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-right: 60px;
-  width: 280px;
   padding-bottom: 12px;
 }
 .ves-bludo {
@@ -51,23 +47,24 @@
   letter-spacing: 0.02em;
 }
 .garnir {
+  font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
-  padding-top: 8px;
-  padding-bottom: 20px;
 }
 
 .desert {
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  padding-right: 160px;
+  padding-right: 142px;
   padding-bottom: 11px;
 }
 
 .napoi {
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -76,6 +73,7 @@
   padding-bottom: 11px;
 }
 .zakaz-stola-btn {
+  font-family: 'Montserrat';
   background: #000000;
   border: 2px solid #fffdee;
   border-radius: 25px;
@@ -85,18 +83,12 @@
   letter-spacing: 0.02em;
   color: #f3c653;
   padding: 14px 24px;
-  /*position: absolute;
-  right: 85px;
-  bottom: 60px;*/
-}
+  }
 /*=============================MEDIA=========================*/
 @media (min-width: 320px) {
   .container {
     width: 100%;
     margin: 0 auto;
-  }
-  .menu-resto {
-    padding: 32px 15px;
   }
   .menu-resto-title {
     padding-bottom: 32px;
@@ -111,7 +103,6 @@
     line-height: 1.21;
   }
   .discription-bludo {
-    width: 220px;
     padding-right: 32px;
     padding-bottom: 8px;
   }
@@ -132,25 +123,33 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
     padding-right: 124px;
-    /*width: 113px;*/
-  }
+    }
   .napoi {
     font-size: 14px;
     line-height: 1.21;
     padding-right: 88px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 1023px) {
   .zakaz-stola-btn {
     margin-top: 32px;
+    margin-bottom: 32px;
     margin-left: 74px;
     margin-right: 74px;
   }
 }
+
 @media (min-width: 414px) {
   .container {
     width: 414px;
     margin: 0 auto;
+  }
+  .desert {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    padding-right: 142px;
   }
 }
 
@@ -161,19 +160,41 @@
   }
   .menu {
     display: flex;
-    gap: 88px;
+    gap: 140px;
   }
-  .menu-resto {
-    padding: 58px 47px 40px;
+  .ves-bludo {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    padding-right: 60px;
+  }
+  .discription-bludo {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    padding-right: 53px;
+    padding-bottom: 12px;
+  }
+  .desert {
+    padding-right: 158px;
+  }
+  .napoi {
+    padding-right: 111px;
   }
   .menu-resto-title {
     padding-bottom: 40px;
   }
   .zakaz-stola-btn {
     margin-top: 33px;
+    margin-bottom: 40px;
     margin-left: 694px;
   }
 }
+
 @media (min-width: 1280px) {
   .container {
     width: 1140px;
@@ -182,41 +203,33 @@
   .menu {
     gap: 140px;
   }
-  .menu-resto {
-    padding: 58px 85px 60px;
-  }
+
   .name-bludo {
     font-size: 16px;
     line-height: 1.25;
-}
-.discription-bludo {
-    width: 257px;
-    padding-right: 60px;
-    }
+  }
   .garychi-stravu {
     font-size: 24px;
     line-height: 1.17;
     padding-bottom: 20px;
-}
-.garnir {
+  }
+  .garnir {
     font-size: 24px;
     line-height: 1.17;
-    
-}
-.desert {
+  }
+  .desert {
     font-size: 16px;
     line-height: 1.25;
-    
-    padding-right: 149px;
-}
-.napoi {
+    padding-right: 203px;
+  }
+  .napoi {
     font-size: 16px;
     line-height: 1.25;
-    padding-right: 95px;
-}
-  
+    padding-right: 136px;
+  }
   .zakaz-stola-btn {
     margin-top: 32px;
-    margin-left: 725px;
+    margin-bottom: 60px;
+    margin-left: 874px;
   }
 }
