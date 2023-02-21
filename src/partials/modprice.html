@@ -1,43 +1,44 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modprice>
   <div class="modal">
-    <button class="modal-close button" data-modal-close>
+    <button class="modal-close button" data-modprice-close>
       <svg width="24" height="24" class="icon-modal-close">
         <use href="../img/sprite-icons.svg#close"></use>
       </svg>
     </button>
     <h1 class="modal-title">ЦІНИ НА НОМЕР</h1>
     <h2 class="modal-secondary-title">Двомісний люкс</h2>
-    <p class="modal-text">Категорія номеру</p>
+    <p class="modal-text modal-label">Категорія номеру</p>
     <form class="modal-form">
-      <div class="form-field">
-        <input
-          type="number"
-          class="modal-input"
-          name="nigths"
-          id="nigths"
-          value="1"
-          min="1"
-          pattern="[0-9]{,2}"
-          required
-        />
-        <label for="nigths" class="modal-label">Кількість ночей</label>
-      </div>
+      <div class="modal-tablet">
+        <div class="form-field">
+          <input
+            type="number"
+            class="modal-input modprice-nigth"
+            name="nigths"
+            id="nigths"
+            value="1"
+            min="1"
+            pattern="[0-9]{,2}"
+            required
+          />
+          <label for="nigths" class="modal-label">Кількість ночей</label>
+        </div>
 
-      <div class="form-field">
-        <input
-          type="number"
-          class="modal-input"
-          name="price"
-          id="price"
-          value="1000"
-          step="1000"
-          min="1000"
-        />
-        <label for="price" class="modal-label">грн</label>
-      </div>
+        <div class="form-field">
+          <input
+            type="number"
+            class="modal-input"
+            name="price"
+            id="price"
+            value="1000"
+            step="1000"
+            min="1000"
+          />
+          <label for="price" class="modal-label">грн</label>
+        </div>
+      </div >
 
       <button type="submit" class="modal-btn">ЗАБРОНЮВАТИ НОМЕР</button>
     </form>
   </div>
 </div>
-<script src="./js/modal.js"></script>

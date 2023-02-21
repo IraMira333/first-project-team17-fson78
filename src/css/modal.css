@@ -1,0 +1,255 @@
+/* ---MODALKA-- */
+.no-scroll {
+  overflow: hidden;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 12, 7, 0.8);
+  opacity: 1;
+  visibility: visible;
+  overflow: scroll;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  min-height: 572px;
+  max-width: 712px;
+  padding: 16px 15px 60px 15px;
+  background-color: #fffdee;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+.modal-close {
+  display: block;
+  height: 24px;
+  width: 24px;
+  margin-right: 1px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  /* margin-left: auto; */
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-modal-close {
+  stroke: #000000;
+  transition: storke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-modal-close:focus,
+.icon-modal-close:hover,
+.icon-modal-close:active {
+  stroke: #808080;
+}
+.modal-input.special {
+  display: none;
+}
+.modal-label.special {
+  display: none;
+}
+.modal-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-input {
+  width: 100%;
+  height: 54px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  color: #808080;
+  padding-left: 12px;
+  margin-top: 20px;
+  border: 1px solid var(--color-second);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+  outline: transparent;
+  border: 1px solid var(--color-acsent);
+}
+.modal-secondary-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: 0.05em;
+  color: #808080;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: none;
+}
+.modal-label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-second);
+  margin-top: 8px;
+  margin-left: 15px;
+}
+.modal-text {
+  margin-left: 0;
+}
+.modal-input.modprice-nigth {
+  padding-left: 15px;
+}
+.modal-form {
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 40px;
+
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid var(--color-acsent);
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus,
+.modal-btn:active {
+  background-color: var(--color-acsent);
+  color: #000000;
+}
+.arrow-position {
+  position: relative;
+}
+.modal-input.calendar {
+  padding-right: 15px;
+}
+.modal-svg {
+  fill: var(--color-second);
+  background-color: #fffdee;
+  position: absolute;
+  right: 19px;
+  top: 35px;
+  pointer-events: none;
+}
+.box-hidden {
+  width: 15px;
+  height: 40px;
+  background-color:#fffdee;
+  position: absolute;
+  right: 2px;
+  top: 30px;
+}
+.select-frame {
+  background-color: #f0ecd6;
+}
+.special-tablet {
+  display: none;
+}
+.special-mob {
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .modal-tablet {
+    display: flex;
+    gap: 16px;
+    row-gap: 8px;
+    flex-wrap: wrap;
+  }
+  .modal {
+    min-height: 489px;
+    padding: 16px 16px 60px 60px;
+  }
+  .modal-input {
+    width: 288px;
+    height: 64px;
+  }
+  .modal-input.modprice-nigth {
+    padding-left: 12px;
+  }
+  .modal-input.calendar {
+    padding-right: 20px;
+  }
+  .modal-title {
+    font-size: 40px;
+    line-height: 1.15;
+    margin-right: 44px;
+  }
+
+  .modal-svg {
+    top: 40px;
+    right: 24px;
+  }
+  .box-hidden {
+    right: 5px;
+  top: 35px;
+  }
+
+  .modal-input.special {
+    display: block;
+    border: 1px solid transparent;
+  }
+  .modal-label {
+    margin-left: 12px;
+  }
+
+  .modal-label.special {
+    display: block;
+    color: transparent;
+  }
+  .special-mob {
+    display: none;
+  }
+  .special-tablet {
+    display: flex;
+  }
+
+  .modal-btn {
+    width: 592px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
