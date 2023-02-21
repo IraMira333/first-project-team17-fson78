@@ -48,6 +48,7 @@
 }
 .btn-swipe:hover,
 .btn-swipe:focus {
+  cursor: pointer;
   fill: #f3c653;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -68,6 +69,7 @@
   margin-top: 20px;
 }
 .btn {
+  cursor: pointer;
   background: #000000;
   border: 2px solid #f0ecd6;
   border-radius: 25px;
@@ -142,19 +144,6 @@
 .descr-2 {
   margin-right: 40px;
 }
-/* .cut-img{
-  width: 100px;
-  height: 194px;
-}
-.img-cut{
-display: block;
-height: 100%;
-  width: 100%;
-
-  object-fit: cover;
-object-position: left;
-
-} */
 
 /* --------THIRD SECTION -------------*/
 .room-for-2 {
@@ -184,16 +173,9 @@ img {
   .pre-title {
     font-size: 32px;
     line-height: 37px;
+    margin-top: 66px;
   }
-  .pre-luxe {
-    padding-top: 62px;
-  }
-  .pre-3x {
-    padding-top: 66px;
-  }
-  .pre-2x {
-    padding-top: 64px;
-  }
+
   .logo-mi {
     font-size: 64px;
     line-height: 69px;
@@ -217,13 +199,14 @@ img {
   }
   .img-1 {
     position: absolute;
-    top: -32px;
+    top: -98px;
     left: 50%;
     margin-top: 0;
   }
+
   .wrap-img-1 {
     column-gap: 40px;
-    margin-top: 176px;
+
     margin-bottom: 32px;
     margin-right: 0;
     width: 100%;
@@ -250,6 +233,7 @@ img {
     flex-direction: column;
     width: 428px;
     align-items: end;
+    margin-top: 176px;
   }
   .wrap-btn {
     margin: 0;
@@ -283,18 +267,12 @@ img {
     right: 50%;
     margin-top: 0;
   }
-  .wrap-img-swipe-2 {
-    display: flex;
-    flex-direction: column;
-    width: 428px;
-    align-items: start;
-    margin-left: auto;
-  }
+
   .wrap-img-2 {
     column-gap: 40px;
-    margin-top: 169px;
     margin-bottom: 32px;
     margin-left: 0;
+    margin-top: 0;
   }
   .swipe-2 {
     margin-bottom: 40px;
@@ -303,6 +281,14 @@ img {
     margin: 0;
     padding: 0;
   }
+  .wrap-img-swipe-2 {
+    display: flex;
+    flex-direction: column;
+    width: 428px;
+    align-items: start;
+    margin-left: auto;
+    margin-top: 169px;
+  }
 
   /* section3 */
   .room-2x {
@@ -310,7 +296,7 @@ img {
   }
   .img-3 {
     position: absolute;
-    top: -32px;
+    top: -98px;
     left: 50%;
     margin-top: 0;
   }
@@ -321,24 +307,37 @@ img {
   }
   .pre-title {
     margin-top: 72px;
+    padding-top: 0;
   }
   .title {
     font-size: 36px;
     line-height: 40px;
     margin-top: 72px;
   }
+  .logo-mi {
+    font-size: 64px;
+    line-height: 69px;
+    font-weight: 700;
+  }
   .description {
     font-weight: 700;
+    width: 440px;
+    margin-top: 24px;
+  }
+  .descr-2 {
     width: 400px;
   }
   .img-1,
   .img-3 {
     left: 50%;
+    top: -105px;
   }
+
   .img-2 {
     right: 50%;
+    top: -32px;
   }
-  .wrap-img-1 {
+  .wrap-img-swipe-1 {
     margin-top: 188px;
   }
   .wrap-img-swipe-1,
@@ -348,9 +347,7 @@ img {
   .wrap-title-2 {
     margin-right: 50px;
   }
-  .description {
-    margin-top: 24px;
-  }
+
   .wrap-btn {
     bottom: 160px;
   }
