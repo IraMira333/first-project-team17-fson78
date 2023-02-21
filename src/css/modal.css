@@ -89,7 +89,7 @@
   line-height: 1.16667;
   letter-spacing: 0.05em;
   background-color: transparent;
-  color: var(--color-main);
+  color: #808080;
   padding-left: 15px;
   margin-top: 20px;
   border: 1px solid var(--color-second);
@@ -107,7 +107,7 @@
   font-size: 24px;
   line-height: 1.16667;
   letter-spacing: 0.05em;
-  color: var(--color-main);
+  color: #808080;
   margin-top: 40px;
   margin-bottom: 20px;
   border: none;
