@@ -4,28 +4,27 @@
   font-size: 20px;
   line-height: 1.15;
   color: #b4b4b4;
-
-  margin-top: 32px;
 }
 .logo-mi {
+  display: block;
   font-family: 'Mimino-700';
   font-weight: 700;
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
   color: #494848;
-
   margin-top: 8px;
+  margin-bottom: 32px;
 }
+
 .title {
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.05em;
-
-  margin-top: 32px;
 }
+
 .description {
   width: 258px;
   left: 15px;
@@ -44,7 +43,6 @@
 .btn-swipe {
   background: transparent;
   border: none;
-  margin-top: 20px;
 }
 .btn-swipe:hover,
 .btn-swipe:focus {
@@ -55,11 +53,13 @@
 .swipe-1 {
   display: flex;
   gap: 30px;
+  margin-top: 20px;
 }
 .swipe-2 {
   display: flex;
   justify-content: end;
   gap: 30px;
+  margin-top: 20px;
 }
 /* ----DETAIL BTN--- */
 .wrap-btn {
@@ -80,9 +80,7 @@
   letter-spacing: 0.02em;
   color: #f3c653;
 }
-.btn:last-child {
-  margin-bottom: 32px;
-}
+
 .btn:hover,
 .btn:focus {
   color: #f3c653;
@@ -100,26 +98,33 @@
 }
 
 /* ----------FIRST SECTION--------- */
-.room-luxe {
-  background-color: #fffdee;
+.hotelsection {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .img-1 {
   display: flex;
   justify-content: end;
 }
 .wrap-img-1 {
-  margin-left: -125px;
+  /* margin-left: -125px; */
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
+  margin-left: -15px;
+  margin-top: 32px;
+  /* column-gap: 16px;
   width: 100%;
-  align-items: flex-end;
+  align-items: flex-end; */
 }
 .wrap-img-swipe-1 {
-  margin-top: 32px;
+  /* margin-top: 32px;
+  margin-left: -125px; */
+  /* display: flex; */
 }
 
 /* --------SECOND SECTION ----------*/
-.room-for-3 {
+.hotelsection.bgc {
   background: #f0ecd6;
 }
 .img-2 {
@@ -146,30 +151,17 @@
 }
 
 /* --------THIRD SECTION -------------*/
-.room-for-2 {
-  background: #fffdee;
-}
 .img-3 {
   display: flex;
   justify-content: end;
 }
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
 
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 414px;
-}
 img {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-  }
   .pre-title {
     font-size: 32px;
     line-height: 37px;
@@ -302,9 +294,6 @@ img {
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1140px;
-  }
   .pre-title {
     margin-top: 72px;
     padding-top: 0;
