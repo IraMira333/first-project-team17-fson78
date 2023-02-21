@@ -115,12 +115,16 @@
       <div class="hero-btns">
         <ul class="hero-btn">
           <li>
-            <button class="hero-button black" type="button">
+            <button class="hero-button black" type="button" data-modtable-open>
               Забронювати столик
             </button>
           </li>
           <li>
-            <button class="hero-button black reserve-rooms" type="button">
+            <button
+              class="hero-button black reserve-rooms"
+              type="button"
+              data-modroom-open
+            >
               Забронювати номер
             </button>
           </li>
@@ -493,7 +497,7 @@
       </div>
 
       <div class="buttons-wrap">
-        <button type="button" class="rest-button">Забронювати столик</button>
+        <button type="button" class="rest-button" data-modtable-open>Забронювати столик</button>
 
         <a href="../restaurant.html" class="rest-button">Переглянути меню</a>
       </div>
@@ -590,7 +594,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
       slidesPerView: 'auto',
 
       spaceBetween: spaceBetween,
-      
+
 
       pagination: {
         el: '.swiper-pagination',
@@ -784,7 +788,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
     <div class="tablet-content-wrap-hotel">
       <div class="big-slider-wrap  swiper">
         <ul class="hotel-slider-wrap swiper-wrapper">
-          
+
           <li class="small-slider-image dynamic swiper-slide">
             <picture>
               <source
@@ -837,10 +841,10 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
             </picture>
           </li>
 
-          <li class="hotel-png-image   swiper-slide">              
-        
+          <li class="hotel-png-image   swiper-slide">
+
             <img src="../img/hmpg-2-4/hotel2.png" alt="restaurant"  />
-         
+
         </li>
 
           <li class="hotel-slider-image swiper-slide">
@@ -862,7 +866,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
               <img
                 src="../img/hmpg-2-4/hotel1.jpg"
                 alt="room photo"
-                
+
               />
             </picture>
           </li>
@@ -953,9 +957,9 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
       </div>
 
       <div class="buttons-wrap">
-        <button type="button" class="rest-button">Забронювати номер</button>
+        <button type="button" class="rest-button" data-modroom-open>Забронювати номер</button>
+        <button type="button" class="rest-button" data-modprice-open>Переглянути ціни</button>
 
-        <a href="../hotel.html" class="rest-button">Переглянути ціни</a>
       </div>
     </div>
   </div>
@@ -1050,15 +1054,15 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
     slidesPerView: 'auto',
 
     spaceBetween: spaceBetween,
-    
-  
+
+
 
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
       type: 'fraction',
     },
-    
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
