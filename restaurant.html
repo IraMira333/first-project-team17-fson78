@@ -107,12 +107,16 @@
       <div class="hero-btns">
         <ul class="hero-btn">
           <li>
-            <button class="hero-button" type="button">
+            <button class="hero-button" type="button" data-modtable-open>
               Забронювати столик
             </button>
           </li>
           <li>
-            <button class="hero-button reserve-rooms" type="button">
+            <button
+              class="hero-button reserve-rooms"
+              type="button"
+              data-modroom-open
+            >
               Забронювати номер
             </button>
           </li>
@@ -620,51 +624,118 @@
   </div>
 </div>
 
-      <div class="backdrop is-hidden" data-modprice>
+      <div class="backdrop is-hidden" data-modroom>
   <div class="modal">
-    <button class="modal-close button" data-modprice-close>
+    <button class="modal-close button" data-modroom-close>
       <svg width="24" height="24" class="icon-modal-close">
         <use href="../img/sprite-icons.svg#close"></use>
       </svg>
     </button>
-    <h1 class="modal-title">ЦІНИ НА НОМЕР</h1>
-    <h2 class="modal-secondary-title">Двомісний люкс</h2>
-    <p class="modal-text modal-label">Категорія номеру</p>
+    <h1 class="modal-title">ЗАБРОНЮВАТИ НОМЕР</h1>
     <form class="modal-form">
       <div class="modal-tablet">
         <div class="form-field">
           <input
-            type="number"
-            class="modal-input modprice-nigth"
-            name="nigths"
-            id="nigths"
-            value="1"
-            min="1"
-            pattern="[0-9]{,2}"
+            type="text"
+            class="modal-input"
+            name="name"
+            id="name"
+            placeholder="Ваше ім’я"
+            pattern="^[А-Яа-яЁё\s]+$"
             required
           />
-          <label for="nigths" class="modal-label">Кількість ночей</label>
+          <label for="name" class="modal-label"
+            >На кого забронювати номер?</label
+          >
         </div>
 
         <div class="form-field">
           <input
-            type="number"
+            type="tel"
             class="modal-input"
-            name="price"
-            id="price"
-            value="1000"
-            step="1000"
-            min="1000"
+            name="tel"
+            id="tel"
+            placeholder="+38 (___) ___-__-__"
+            pattern="/^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$/"
+            required
           />
-          <label for="price" class="modal-label">грн</label>
+          <label for="nigths" class="modal-label">Номер телефону</label>
         </div>
-      </div >
 
-      <button type="submit" class="modal-btn">ЗАБРОНЮВАТИ НОМЕР</button>
+        <div class="form-field">
+          <input
+            type="text"
+            class="modal-input special"
+            name="name"
+            id="name"
+            pattern="^[А-Яа-яЁё\s]+$"
+            required
+          />
+          <label for="name" class="modal-label special"
+            >На кого забронювати номер?</label
+          >
+        </div>
+
+        <div class="form-field arrow-position">
+          <select id="category" name="category" class="modal-input calendar">
+            <option class="modal-input select-frame" value="1-berth">
+              Двомісний номер
+            </option>
+            <option
+              class="modal-input select-frame"
+              value="2-berth-lux"
+              selected
+            >
+              Двомісний люкс
+            </option>
+            <option class="modal-input select-frame" value="3-berth">
+              Тримісний номер
+            </option>
+          </select>
+          <svg class="modal-svg" width="24" height="24">
+            <use href="../img/sprite-icons.svg#down-bold"></use>
+          </svg>
+          <div class="box-hidden"></div>
+          <label for="category" class="modal-label">Категорія номеру</label>
+        </div>
+
+        <div class="form-field arrow-position">
+          <input
+            type="date"
+            class="modal-input calendar"
+            name="data-in"
+            id="data-in"
+            placeholder="2023-03-01"
+            min="2023-03-01"
+            required
+          />
+          <svg class="modal-svg" width="24" height="24">
+            <use href="../img/sprite-icons.svg#down-bold"></use>
+          </svg>
+          <label for="data-in" class="modal-label">Дата заїзду</label>
+        </div>
+
+        <div class="form-field arrow-position">
+          <input
+            type="date"
+            class="modal-input calendar"
+            name="data-out"
+            id="data-out"
+            placeholder="2023-03-02"
+            min="2023-03-02"
+            required
+          />
+          <svg class="modal-svg" width="24" height="24">
+            <use href="../img/sprite-icons.svg#down-bold"></use>
+          </svg>
+          <label for="data-out" class="modal-label">Дата виїзду</label>
+        </div>
+      </div>
+
+      <button type="submit" class="modal-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
     </form>
   </div>
 </div>
-
 
     </main>
 
