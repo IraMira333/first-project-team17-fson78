@@ -1,5 +1,3 @@
-
-
 <section class="rest-h2">
   <div class="container rest-container">
     <div class="textblock">
@@ -13,7 +11,7 @@
     <div class="tablet-content-wrap">
       <div class="big-slider-wrap swiper">
         <ul class="rest-slider-wrap swiper-wrapper">
-          <li class="rest-slider-image swiper-slide">
+          <li class="rest-slider-image first-img swiper-slide">
             <picture>
               <source
                 media="(min-width: 1024px)"
@@ -32,13 +30,11 @@
               <img src="../img/hmpg-2-4/dish1.jpg" alt="steak" width="274" />
             </picture>
           </li>
-          <li class="rest-png-image swiper-slide">              
-        
-              <img src="../img/hmpg-2-4/dish2.png" alt="breakfast"  />
-           
-          </li>
+          <!-- <li class="rest-png-image swiper-slide">
+            <img src="../img/hmpg-2-4/dish2.png" alt="breakfast" />
+          </li> -->
 
-          <li class="small-slider-image swiper-slide" >
+          <li class="small-slider-image mobile-visible swiper-slide">
             <picture>
               <source
                 media="(min-width: 1024px)"
@@ -77,17 +73,19 @@
             </picture>
           </li>
 
-          <li class="rest-slider-image cropped swiper-slide" style="width: 270px;">
+          <li
+            class="rest-slider-image cropped swiper-slide"
+            style="width: 270px"
+          >
             <picture>
               <source
-                
                 srcset="
                   ../img/hmpg-2-4/dish6.jpg    1x,
                   ../img/hmpg-2-4/dish6@2x.jpg 2x
                 "
               />
 
-              <img 
+              <img
                 src="../img/hmpg-2-4/dish6.jpg"
                 alt="breakfast"
                 width="270"
@@ -98,7 +96,6 @@
           <li class="rest-slider-image cropped swiper-slide">
             <picture>
               <source
-                
                 srcset="
                   ../img/hmpg-2-4/dish7.jpg    1x,
                   ../img/hmpg-2-4/dish7@2x.jpg 2x
@@ -116,7 +113,6 @@
           <li class="rest-slider-image cropped swiper-slide">
             <picture>
               <source
-                
                 srcset="
                   ../img/hmpg-2-4/dish8.jpg    1x,
                   ../img/hmpg-2-4/dish8@2x.jpg 2x
@@ -131,10 +127,9 @@
             </picture>
           </li>
 
-          <li class="rest-slider-image  cropped swiper-slide">
+          <li class="rest-slider-image cropped swiper-slide">
             <picture>
               <source
-                
                 srcset="
                   ../img/hmpg-2-4/dish9.jpg    1x,
                   ../img/hmpg-2-4/dish9@2x.jpg 2x
@@ -172,7 +167,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -248,13 +242,22 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
 
   <script>
     // Init Swiper
+    var spaceBetween = 20;
+
+    if (window.matchMedia('(min-width: 1024px)').matches && window.matchMedia('(max-width: 1280px)').matches) {
+      spaceBetween = 34;
+    } else if (window.matchMedia('(min-width: 1280px)').matches) {
+      spaceBetween = 87;
+    } else if (window.matchMedia('(max-width: 1024px)').matches) {
+      spaceBetween = 20;
+    }
+
     var swiper = new Swiper('.swiper', {
       // Install Plugin To Swiper
       modules: [myPlugin],
-      slidesPerView: "auto",
-     
+      slidesPerView: 'auto',
 
-      spaceBetween: 87,
+      spaceBetween: spaceBetween,
       
 
       pagination: {
@@ -262,7 +265,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
         clickable: true,
         type: 'fraction',
       },
-      
+
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
