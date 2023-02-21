@@ -46,12 +46,12 @@
 .btn-swipe {
   background: transparent;
   border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .btn-swipe:hover,
 .btn-swipe:focus {
-  cursor: pointer;
   fill: #f3c653;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .swipe-1 {
   display: flex;
@@ -83,6 +83,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #f3c653;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -91,7 +92,7 @@
   background: #ffffff;
   border: 2px solid #f3c653;
   border-radius: 25px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .btn-detail {
   padding: 14px 64px;
@@ -120,11 +121,6 @@
   /* column-gap: 16px;
   width: 100%;
   align-items: flex-end; */
-}
-.wrap-img-swipe-1 {
-  /* margin-top: 32px;
-  margin-left: -125px; */
-  /* display: flex; */
 }
 
 /* --------SECOND SECTION ----------*/
@@ -326,7 +322,6 @@ img {
   }
   .description.descr-2 {
     width: 400px;
-
   }
   .img-1,
   .img-3 {
@@ -338,8 +333,7 @@ img {
     left: 95px;
     top: -104px;
   }
-  .wrap-img-swipe-1 {
-  }
+
   .wrap-img-swipe-1,
   .wrap-img-swipe-2 {
     width: 548px;
