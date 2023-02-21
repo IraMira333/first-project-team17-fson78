@@ -106,7 +106,6 @@
   margin-bottom: 20px;
 }
 
-
 .subtitle-hero {
   font-family: 'Montserrat';
   font-style: normal;
@@ -133,6 +132,7 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 113px;
 }
 .maps-address {
   /* position: absolute; */
@@ -172,7 +172,7 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
-  margin-top: 113px;
+  /* margin-top: 113px; */
 }
 
 .hero-button {
@@ -292,6 +292,10 @@
         margin: 0 auto;
     } */
 }
+.sub-hotel {
+  font-size: 20px;
+  line-height: 24px;
+}
 
 /* tab */
 
@@ -399,7 +403,7 @@
   .buttons-hero {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
   }
   .maps-address {
@@ -426,7 +430,9 @@
     display: flex;
     flex-direction: row;
   }
-
+  .hero-btn {
+    gap: 40px;
+  }
   .rest-hero {
     background-image: linear-gradient(
         to right,
@@ -471,10 +477,10 @@
     text-transform: uppercase;
   }
   .title-hero.rest {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
   .subtitle-hero.rest {
-    margin-bottom: 64px;
+    margin-bottom: 56px;
   }
   .hotel-hero {
     background-image: linear-gradient(
@@ -662,9 +668,18 @@
     display: none;
   }
   .hero-btn {
-    row-gap: 40px;
+    gap: 60px;
   }
   .hero-button.black {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+  .title-hero.rest {
+    margin-bottom: 16px;
+  }
+  .subtitle-hero.rest {
+    margin-bottom: 64px;
+  }
+  .title-hero.rest {
+    margin-bottom: 32px;
   }
 }
