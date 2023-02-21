@@ -129,7 +129,7 @@
 }
 .icon-arrow:hover,
 .icon-arrow:focus,
-.icon-arrow,:active {
+.icon-arrow:active {
   fill: var(--color-acsent);
 }
 
