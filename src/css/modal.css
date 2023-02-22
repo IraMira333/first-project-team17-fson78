@@ -11,7 +11,8 @@
   background-color: rgba(14, 12, 7, 0.8);
   opacity: 1;
   visibility: visible;
-  overflow: scroll;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -31,8 +32,9 @@
   max-width: 712px;
   padding: 16px 15px 60px 15px;
   background-color: #fffdee;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -45%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .backdrop.is-hidden .modal {
