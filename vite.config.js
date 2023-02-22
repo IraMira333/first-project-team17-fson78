@@ -8,10 +8,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, './src/index.html'),
-        apartment: resolve(__dirname, './src/apartment.html'),
-        hotel: resolve(__dirname, './src/hotel.html'),
-        restaurant: resolve(__dirname, './src/restaurant.html'),
+        main: resolve(__dirname, 'src/index.html'),
+        apartment: resolve(__dirname, 'src/apartment.html'),
+        hotel: resolve(__dirname, 'src/hotel.html'),
+        restaurant: resolve(__dirname, 'src/restaurant.html'),
       },
     },
     outDir: '../dist',
