@@ -20,6 +20,11 @@
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #e5e5e5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-room-map:hover,
+.hero-room-map:focus {
+  background-color: rgba(0, 0, 0, 0.6);;
 }
 .hero-room-link {
   padding-left: 33px;
@@ -281,6 +286,11 @@
   width: 24px;
   height: 24px;
   fill: var(--color-acsent);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-soc-icon:hover,
+.hero-soc-icon:focus {
+  fill: #ffffff;
 }
 .hero-soc {
   display: flex;
@@ -365,6 +375,11 @@
   }
   .hero-button.black {
     background-color: #000000;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-button.black:hover,
+  .hero-button.black:focus {
+    background-color: #ffffff;
   }
   .hero-soc {
     margin-top: 25px;

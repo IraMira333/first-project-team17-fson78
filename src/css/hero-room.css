@@ -112,6 +112,11 @@
     width: 24px;
     height: 24px;
     fill: var(--color-acsent);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-room-soc-icon:hover,
+.hero-room-soc-icon:focus {
+  fill: #FFFFFF;
 }
 .hero-room-map {
     position: absolute;
