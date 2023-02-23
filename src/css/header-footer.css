@@ -99,7 +99,15 @@
   align-items: center;
   padding: 0px 15px;
 }
+@media screen and (max-width: 350px) {
+.header-list {
+  gap: 10px;
 
+}
+.header-text {
+  font-size: 15px;
+}
+}
 .logo {
   font-family: 'Mimino-700', sans-serif;
   font-style: normal;
