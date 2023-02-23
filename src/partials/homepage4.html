@@ -1,5 +1,5 @@
 <section class="hotel-h2">
-  <div class=" container hotel-container">
+  <div class="container hotel-container">
     <div class="textblock-hotel">
       <p class="logo-h2">MIMIHO</p>
       <h2 class="title-h2">Готель</h2>
@@ -10,9 +10,8 @@
     </div>
 
     <div class="tablet-content-wrap-hotel">
-      <div class="big-slider-wrap  swiper">
+      <div class="big-slider-wrap swiper">
         <ul class="hotel-slider-wrap swiper-wrapper">
-
           <li class="small-slider-image dynamic swiper-slide">
             <picture>
               <source
@@ -65,11 +64,9 @@
             </picture>
           </li>
 
-          <li class="hotel-png-image   swiper-slide">
-
-            <img src="./img/hmpg-2-4/hotel2.png" alt="restaurant"  />
-
-        </li>
+          <li class="hotel-png-image swiper-slide">
+            <img src="./img/hmpg-2-4/hotel2.png" alt="restaurant" />
+          </li>
 
           <li class="hotel-slider-image swiper-slide">
             <picture>
@@ -87,11 +84,7 @@
                   ./img/hmpg-2-4/hotel1@2x.jpg 2x
                 "
               />
-              <img
-                src="./img/hmpg-2-4/hotel1.jpg"
-                alt="room photo"
-
-              />
+              <img src="./img/hmpg-2-4/hotel1.jpg" alt="room photo" />
             </picture>
           </li>
 
@@ -113,7 +106,7 @@
             </picture>
           </li>
 
-          <li class="hotel-slider-image  cropped swiper-slide">
+          <li class="hotel-slider-image cropped swiper-slide">
             <picture>
               <source
                 srcset="
@@ -139,11 +132,7 @@
                 "
               />
 
-              <img
-                src="./img/hmpg-2-4/hotel8.jpg"
-                alt="spa"
-                width="270"
-              />
+              <img src="./img/hmpg-2-4/hotel8.jpg" alt="spa" width="270" />
             </picture>
           </li>
 
@@ -163,7 +152,6 @@
               />
             </picture>
           </li>
-
         </ul>
         <div class="slider-btn-wrap-right">
           <button class="swipe-left swiper-button-prev">
@@ -181,120 +169,122 @@
       </div>
 
       <div class="buttons-wrap">
-        <button type="button" class="rest-button" data-modroom1-open>Забронювати номер</button>
-        <button type="button" class="rest-button" data-modprice-open>Переглянути ціни</button>
-
+        <button type="button" class="rest-button" data-modroom1-open>
+          Забронювати номер
+        </button>
+        <button type="button" class="rest-button" data-modprice-open>
+          Переглянути ціни
+        </button>
       </div>
     </div>
   </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<!-- Include plugin after Swiper -->
-<script>
-  /* ========
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Include plugin after Swiper -->
+  <script>
+    /* ========
 Debugger plugin, simple demo plugin to console.log some of callbacks
 ======== */
-  function myPlugin({ swiper, extendParams, on }) {
-    extendParams({
-      debugger: false,
-    });
+    function myPlugin({ swiper, extendParams, on }) {
+      extendParams({
+        debugger: false,
+      });
 
-    on('init', () => {
-      if (!swiper.params.debugger) return;
-      console.log('init');
-    });
-    on('click', (swiper, e) => {
-      if (!swiper.params.debugger) return;
-      console.log('click');
-    });
-    on('tap', (swiper, e) => {
-      if (!swiper.params.debugger) return;
-      console.log('tap');
-    });
-    on('doubleTap', (swiper, e) => {
-      if (!swiper.params.debugger) return;
-      console.log('doubleTap');
-    });
-    on('sliderMove', (swiper, e) => {
-      if (!swiper.params.debugger) return;
-      console.log('sliderMove');
-    });
-    on('slideChange', () => {
-      if (!swiper.params.debugger) return;
-      console.log(
-        'slideChange',
-        swiper.previousIndex,
-        '->',
-        swiper.activeIndex
-      );
-    });
-    on('slideChangeTransitionStart', () => {
-      if (!swiper.params.debugger) return;
-      console.log('slideChangeTransitionStart');
-    });
-    on('slideChangeTransitionEnd', () => {
-      if (!swiper.params.debugger) return;
-      console.log('slideChangeTransitionEnd');
-    });
-    on('transitionStart', () => {
-      if (!swiper.params.debugger) return;
-      console.log('transitionStart');
-    });
-    on('transitionEnd', () => {
-      if (!swiper.params.debugger) return;
-      console.log('transitionEnd');
-    });
-    on('fromEdge', () => {
-      if (!swiper.params.debugger) return;
-      console.log('fromEdge');
-    });
-    on('reachBeginning', () => {
-      if (!swiper.params.debugger) return;
-      console.log('reachBeginning');
-    });
-    on('reachEnd', () => {
-      if (!swiper.params.debugger) return;
-      console.log('reachEnd');
-    });
-  }
-</script>
+      on('init', () => {
+        if (!swiper.params.debugger) return;
+        console.log('init');
+      });
+      on('click', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('click');
+      });
+      on('tap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('tap');
+      });
+      on('doubleTap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('doubleTap');
+      });
+      on('sliderMove', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('sliderMove');
+      });
+      on('slideChange', () => {
+        if (!swiper.params.debugger) return;
+        console.log(
+          'slideChange',
+          swiper.previousIndex,
+          '->',
+          swiper.activeIndex
+        );
+      });
+      on('slideChangeTransitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionStart');
+      });
+      on('slideChangeTransitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionEnd');
+      });
+      on('transitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionStart');
+      });
+      on('transitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionEnd');
+      });
+      on('fromEdge', () => {
+        if (!swiper.params.debugger) return;
+        console.log('fromEdge');
+      });
+      on('reachBeginning', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachBeginning');
+      });
+      on('reachEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachEnd');
+      });
+    }
+  </script>
 
-<script>
-  // Init Swiper
-  var spaceBetween = 20;
+  <script>
+    // Init Swiper
+    var spaceBetween = 20;
 
-  if (window.matchMedia('(min-width: 1024px)').matches && window.matchMedia('(max-width: 1280px)').matches) {
-    spaceBetween = 34;
-  } else if (window.matchMedia('(min-width: 1280px)').matches) {
-    spaceBetween = 86;
-  } else if (window.matchMedia('(max-width: 1024px)').matches) {
-    spaceBetween = 20;
-  }
+    if (
+      window.matchMedia('(min-width: 1024px)').matches &&
+      window.matchMedia('(max-width: 1280px)').matches
+    ) {
+      spaceBetween = 34;
+    } else if (window.matchMedia('(min-width: 1280px)').matches) {
+      spaceBetween = 86;
+    } else if (window.matchMedia('(max-width: 1024px)').matches) {
+      spaceBetween = 20;
+    }
 
-  var swiper = new Swiper('.swiper', {
-    // Install Plugin To Swiper
-    modules: [myPlugin],
-    slidesPerView: 'auto',
+    var swiper = new Swiper('.swiper', {
+      // Install Plugin To Swiper
+      modules: [myPlugin],
+      slidesPerView: 'auto',
 
-    spaceBetween: spaceBetween,
+      spaceBetween: spaceBetween,
 
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+      },
 
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      type: 'fraction',
-    },
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    // Enable debugger
-    debugger: true,
-  });
-</script>
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Enable debugger
+      debugger: true,
+    });
+  </script>
 </section>
-
-
