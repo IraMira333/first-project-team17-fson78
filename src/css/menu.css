@@ -164,6 +164,9 @@
     letter-spacing: 0.02em;
     padding-right: 142px;
   }
+  .napoi {
+    padding-right: 50px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -206,7 +209,7 @@
   }
   .menu-btn {
     margin-top: 32px;
-     display: flex;
+    display: flex;
     justify-content: flex-end;
   }
 }
