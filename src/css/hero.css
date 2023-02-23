@@ -111,7 +111,17 @@
 .title-hero.rest {
   margin-bottom: 20px;
 }
-
+@media screen and (max-width: 413px) {
+  .title-hero.rest {
+    margin-left: 8px;
+  }
+  .title-hero.hotel {
+    margin-left: 8px;
+  }
+  .title-hero {
+    margin-left: 8px;
+  }
+}
 .subtitle-hero {
   font-family: 'Montserrat';
   font-style: normal;
