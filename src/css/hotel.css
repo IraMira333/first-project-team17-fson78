@@ -92,7 +92,6 @@
   background: #ffffff;
   border: 2px solid #f3c653;
   border-radius: 25px;
-  
 }
 .btn-detail {
   padding: 14px 64px;
@@ -122,7 +121,18 @@
   width: 100%;
   align-items: flex-end; */
 }
-
+.img1 {
+  width: 244px;
+  height: 322px;
+}
+.img2 {
+  width: 74px;
+  height: 194px;
+}
+.img3 {
+  width: 194px;
+  height: 194px;
+}
 /* --------SECOND SECTION ----------*/
 .hotelsection.bgc {
   background: #f0ecd6;
@@ -169,7 +179,18 @@ img {
     font-size: 32px;
     line-height: 37px;
   }
-
+  .img1 {
+    width: 400px;
+    height: 524px;
+  }
+  .img2 {
+    width: 194px;
+    height: 194px;
+  }
+  .img3 {
+    width: 194px;
+    height: 194px;
+  }
   .logo-mi {
     font-size: 64px;
     line-height: 69px;
@@ -327,6 +348,18 @@ img {
   .img-3 {
     right: 95px;
     bottom: 375px;
+  }
+  .img1 {
+    width: 460px;
+    height: 574px;
+  }
+  .img2 {
+    width: 254px;
+    height: 254px;
+  }
+  .img3 {
+    width: 254px;
+    height: 254px;
   }
 
   .img-2 {
