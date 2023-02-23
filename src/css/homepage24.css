@@ -196,18 +196,18 @@
 }
 
 
-  
+
 /*MOBILE ONLY*/
 @media screen and (max-width: 413px) {
   .swiper-slide img,
     .swiper-slide-active {
     width: 70vmin;
   }
-  
+
     .rest-png-image {
       display: none;
     }
-  
+
     .mobile-visible img {
       width: 13vmin;
       height: 100%;
@@ -217,11 +217,11 @@
     .mobile-visible.swiper-slide-active img{
       width: 39vmin;
     }
-  
+
     .hotel-png-image {
       display: none;;
-      
-       
+
+
     }
 
     .hotel-slider-image img {
@@ -232,7 +232,7 @@
 
     }
 
-    
+
 @media screen and (max-width: 1023px) {
   .rest-h2,
   .hotel-h2 {
@@ -265,7 +265,7 @@
     background-size: 414px;
     background-position: top left;
     padding-left: 0;
-    
+
   }
 
   .hotel-slider-image.cropped {
@@ -287,7 +287,7 @@
    width: max-content;
    height: auto;
    overflow: auto;
-  
+
   }
 
   .rest-slider-image {
@@ -303,7 +303,7 @@
   margin-left: 25px;
   overflow: hidden;
  }
- 
+
  .slider-btn-wrap {
   margin-left: 0;
  }
@@ -323,7 +323,7 @@
   .tablet-content-wrap-hotel>.big-slider-wrap{
     margin-right: 25px;
   }
- 
+
 }
 
 @media screen and (max-width: 1023px) and (min-device-pixel-ratio: 2),
@@ -349,7 +349,7 @@
 
 
 
-  
+
 
 /*TABLET*/
 
@@ -411,9 +411,9 @@
     margin-left: 150px;
   }
 
-  .textblock-hotel .logo-h2 {
+  /* .textblock-hotel .logo-h2 {
     translate: 20px;
-  }
+  } */
 
   .rest-png-image,
   .hotel-png-image {
@@ -454,7 +454,7 @@
   }
   .rest-slider-wrap {
     display: flex;
-   
+
     padding: 0;
   }
 
@@ -473,7 +473,7 @@
     width: 910px;
     justify-content: flex-start;
     flex-direction: row-reverse;
-    
+
   }
 
   .slider-btn-wrap-right {
@@ -487,7 +487,7 @@
   .rest-slider-wrap,
   .hotel-slider-wrap {
     width: fit-content;
-    
+
     margin: 0;
   }
 
@@ -546,7 +546,7 @@
     background-image: none;
   }
 
- 
+
   .small-slider-image.dynamic {
     width: 270px;
   }
@@ -564,7 +564,7 @@
     width: 910px;
     justify-content: flex-start;
     flex-direction: row-reverse;
-    
+
   }
 
   .slider-btn-wrap-right {

@@ -474,7 +474,7 @@
 
   .third-section .pictures-list {
     flex-direction: row-reverse;
-    margin-top: -179x;
+    /* margin-top: -179x; */
     margin-left: 0;
   }
 
