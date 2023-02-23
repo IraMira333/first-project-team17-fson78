@@ -111,7 +111,7 @@
 .title-hero.rest {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 350px) {
   .title-hero.rest {
     margin-left: 8px;
   }
