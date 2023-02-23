@@ -192,7 +192,8 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #ffffff;
 }
 
