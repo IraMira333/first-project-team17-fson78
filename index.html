@@ -653,7 +653,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
 </section>
 
       <section class="hotel-h2">
-  <div class=" container hotel-container">
+  <div class="container hotel-container">
     <div class="textblock-hotel">
       <p class="logo-h2">MIMIHO</p>
       <h2 class="title-h2">Готель</h2>
@@ -664,9 +664,8 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
     </div>
 
     <div class="tablet-content-wrap-hotel">
-      <div class="big-slider-wrap  swiper">
+      <div class="big-slider-wrap swiper">
         <ul class="hotel-slider-wrap swiper-wrapper">
-
           <li class="small-slider-image dynamic swiper-slide">
             <picture>
               <source
@@ -704,11 +703,9 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
             </picture>
           </li>
 
-          <li class="hotel-png-image   swiper-slide">
-
-            <img src="/first-project-team17-fson78/assets/hotel2-25772dab.png" alt="restaurant"  />
-
-        </li>
+          <li class="hotel-png-image swiper-slide">
+            <img src="/first-project-team17-fson78/assets/hotel2-25772dab.png" alt="restaurant" />
+          </li>
 
           <li class="hotel-slider-image swiper-slide">
             <picture>
@@ -720,11 +717,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
                 media="(min-width: 200px)"
                 srcset="/first-project-team17-fson78/assets/hotel1-54f25148.jpg 1x, /first-project-team17-fson78/assets/hotel1@2x-a9168a00.jpg 2x"
               />
-              <img
-                src="/first-project-team17-fson78/assets/hotel1-54f25148.jpg"
-                alt="room photo"
-
-              />
+              <img src="/first-project-team17-fson78/assets/hotel1-54f25148.jpg" alt="room photo" />
             </picture>
           </li>
 
@@ -743,7 +736,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
             </picture>
           </li>
 
-          <li class="hotel-slider-image  cropped swiper-slide">
+          <li class="hotel-slider-image cropped swiper-slide">
             <picture>
               <source
                 srcset="/first-project-team17-fson78/assets/hotel7-a36c3c44.jpg 1x, /first-project-team17-fson78/assets/hotel7@2x-e0171dd1.jpg 2x"
@@ -763,11 +756,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
                 srcset="/first-project-team17-fson78/assets/hotel8-c34be244.jpg 1x, /first-project-team17-fson78/assets/hotel8@2x-a4f5a252.jpg 2x"
               />
 
-              <img
-                src="/first-project-team17-fson78/assets/hotel8-c34be244.jpg"
-                alt="spa"
-                width="270"
-              />
+              <img src="/first-project-team17-fson78/assets/hotel8-c34be244.jpg" alt="spa" width="270" />
             </picture>
           </li>
 
@@ -784,7 +773,6 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
               />
             </picture>
           </li>
-
         </ul>
         <div class="slider-btn-wrap-right">
           <button class="swipe-left swiper-button-prev">
@@ -802,123 +790,125 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
       </div>
 
       <div class="buttons-wrap">
-        <button type="button" class="rest-button" data-modroom1-open>Забронювати номер</button>
-        <button type="button" class="rest-button" data-modprice-open>Переглянути ціни</button>
-
+        <button type="button" class="rest-button" data-modroom1-open>
+          Забронювати номер
+        </button>
+        <button type="button" class="rest-button" data-modprice-open>
+          Переглянути ціни
+        </button>
       </div>
     </div>
   </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<!-- Include plugin after Swiper -->
-<script>
-  /* ========
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Include plugin after Swiper -->
+  <script>
+    /* ========
 Debugger plugin, simple demo plugin to console.log some of callbacks
 ======== */
-  function myPlugin({ swiper, extendParams, on }) {
-    extendParams({
-      debugger: false,
-    });
+    function myPlugin({ swiper, extendParams, on }) {
+      extendParams({
+        debugger: false,
+      });
 
-    on('init', () => {
-      if (!swiper.params.debugger) return;
-      console.log('init');
-    });
-    on('click', (swiper, e) => {
-      if (!swiper.params.debugger) return;
-      console.log('click');
-    });
-    on('tap', (swiper, e) => {
-      if (!swiper.params.debugger) return;
-      console.log('tap');
-    });
-    on('doubleTap', (swiper, e) => {
-      if (!swiper.params.debugger) return;
-      console.log('doubleTap');
-    });
-    on('sliderMove', (swiper, e) => {
-      if (!swiper.params.debugger) return;
-      console.log('sliderMove');
-    });
-    on('slideChange', () => {
-      if (!swiper.params.debugger) return;
-      console.log(
-        'slideChange',
-        swiper.previousIndex,
-        '->',
-        swiper.activeIndex
-      );
-    });
-    on('slideChangeTransitionStart', () => {
-      if (!swiper.params.debugger) return;
-      console.log('slideChangeTransitionStart');
-    });
-    on('slideChangeTransitionEnd', () => {
-      if (!swiper.params.debugger) return;
-      console.log('slideChangeTransitionEnd');
-    });
-    on('transitionStart', () => {
-      if (!swiper.params.debugger) return;
-      console.log('transitionStart');
-    });
-    on('transitionEnd', () => {
-      if (!swiper.params.debugger) return;
-      console.log('transitionEnd');
-    });
-    on('fromEdge', () => {
-      if (!swiper.params.debugger) return;
-      console.log('fromEdge');
-    });
-    on('reachBeginning', () => {
-      if (!swiper.params.debugger) return;
-      console.log('reachBeginning');
-    });
-    on('reachEnd', () => {
-      if (!swiper.params.debugger) return;
-      console.log('reachEnd');
-    });
-  }
-</script>
+      on('init', () => {
+        if (!swiper.params.debugger) return;
+        console.log('init');
+      });
+      on('click', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('click');
+      });
+      on('tap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('tap');
+      });
+      on('doubleTap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('doubleTap');
+      });
+      on('sliderMove', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('sliderMove');
+      });
+      on('slideChange', () => {
+        if (!swiper.params.debugger) return;
+        console.log(
+          'slideChange',
+          swiper.previousIndex,
+          '->',
+          swiper.activeIndex
+        );
+      });
+      on('slideChangeTransitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionStart');
+      });
+      on('slideChangeTransitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionEnd');
+      });
+      on('transitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionStart');
+      });
+      on('transitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionEnd');
+      });
+      on('fromEdge', () => {
+        if (!swiper.params.debugger) return;
+        console.log('fromEdge');
+      });
+      on('reachBeginning', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachBeginning');
+      });
+      on('reachEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachEnd');
+      });
+    }
+  </script>
 
-<script>
-  // Init Swiper
-  var spaceBetween = 20;
+  <script>
+    // Init Swiper
+    var spaceBetween = 20;
 
-  if (window.matchMedia('(min-width: 1024px)').matches && window.matchMedia('(max-width: 1280px)').matches) {
-    spaceBetween = 34;
-  } else if (window.matchMedia('(min-width: 1280px)').matches) {
-    spaceBetween = 86;
-  } else if (window.matchMedia('(max-width: 1024px)').matches) {
-    spaceBetween = 20;
-  }
+    if (
+      window.matchMedia('(min-width: 1024px)').matches &&
+      window.matchMedia('(max-width: 1280px)').matches
+    ) {
+      spaceBetween = 34;
+    } else if (window.matchMedia('(min-width: 1280px)').matches) {
+      spaceBetween = 86;
+    } else if (window.matchMedia('(max-width: 1024px)').matches) {
+      spaceBetween = 20;
+    }
 
-  var swiper = new Swiper('.swiper', {
-    // Install Plugin To Swiper
-    modules: [myPlugin],
-    slidesPerView: 'auto',
+    var swiper = new Swiper('.swiper', {
+      // Install Plugin To Swiper
+      modules: [myPlugin],
+      slidesPerView: 'auto',
 
-    spaceBetween: spaceBetween,
+      spaceBetween: spaceBetween,
 
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+      },
 
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      type: 'fraction',
-    },
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    // Enable debugger
-    debugger: true,
-  });
-</script>
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Enable debugger
+      debugger: true,
+    });
+  </script>
 </section>
-
-
 
       <section class="hp-5-contacts">
   <div class="container contacts-container">
@@ -932,7 +922,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
       <ul class="contacts-list">
         <li class="contacts-item">
           <ul class="contacts-wrap-list">
-            <h3 class="contacts-header-second first-title">Ресторан</h3>
+            <li><h3 class="contacts-header-second first-title">Ресторан</h3></li>
             <li class="contacts-inner-list">
               <a class="contacts-link first-link" href="tel:+380955559533"
                 >095 555 95 33<svg class="contacts-icon">
@@ -947,7 +937,7 @@ Debugger plugin, simple demo plugin to console.log some of callbacks
 
         <li class="contacts-item">
           <ul class="contacts-wrap-list">
-            <h3 class="contacts-header-second second-title">Готель</h3>
+            <li><h3 class="contacts-header-second second-title">Готель</h3></li>
             <li class="contacts-inner-list">
               <a class="contacts-link second-link" href="tel:+380668491089"
                 >066 849 10 89<svg class="contacts-icon">
