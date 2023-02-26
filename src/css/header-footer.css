@@ -1,9 +1,12 @@
 /* ----------HEADER---------- */
 .header {
+  width: 100%;
   position: absolute;
   z-index: 1;
+
   left: 50%;
   transform: translate(-50%);
+  padding-top: 16px;
 }
 
 .header-logo {
@@ -14,24 +17,26 @@
   line-height: calc(39 / 36);
   letter-spacing: 0.3em;
   color: #ffffff;
-  margin-top: 16px;
 }
 
-.hotel-tel {
-  display: flex;
-  gap: 6px;
-}
+.hotel-tel,
 .rest-tel {
   display: flex;
   gap: 6px;
-  height: 24px;
+  align-items: center;
 }
+/* .rest-tel {
+  display: flex;
+  gap: 6px;
+
+} */
 .header-nav {
-  margin-top: 28px;
+  margin-top: 12px;
 }
 .header-list {
   display: flex;
   gap: 20px;
+  align-items: baseline;
 }
 
 .header-soc {
@@ -92,21 +97,27 @@
   padding-bottom: 40px;
   background-color: #0e0c07;
 }
-.container-footer,
-.container-header {
+.footer-box,
+.header-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 15px;
 }
 @media screen and (max-width: 350px) {
-.header-list {
-  gap: 10px;
-
-}
-.header-text {
-  font-size: 15px;
-}
+  .header-box {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .header-list {
+    gap: 8px;
+  }
+  .rest-tel,
+  .hotel-tel {
+    gap: 3px;
+  }
+  .header-text {
+    font-size: 15px;
+  }
 }
 .logo {
   font-family: 'Mimino-700', sans-serif;
@@ -169,11 +180,6 @@
 }
 
 @media screen and (min-width: 414px) {
-  .container-footer,
-  .container-header {
-    width: 414px;
-    margin: 0 auto;
-  }
   .logo {
     margin-left: 44px;
   }
@@ -229,11 +235,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .container-footer,
-  .container-header {
-    width: 960px;
-    margin: 0 auto;
-  }
+
   .logo {
     font-size: 64px;
     line-height: calc(69 / 64);
@@ -290,11 +292,7 @@
     margin-left: 140px;
     margin-top: 38px;
   }
-  .container-footer,
-  .container-header {
-    width: 1140px;
-    margin: 0 auto;
-  }
+
   .logo {
     margin-left: 131px;
   }
