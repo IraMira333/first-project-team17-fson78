@@ -32,7 +32,6 @@
   line-height: 1.15;
   letter-spacing: 0.02em;
   width: 198px;
-
 }
 
 .header-tree {
@@ -110,7 +109,6 @@
 .arrows-list {
   display: flex;
   margin-top: 20px;
-
 }
 
 .icon-arrow {
@@ -139,7 +137,7 @@
 
 .third-section .header-two {
   margin-left: auto;
-  }
+}
 
 .third-section .header-tree {
   margin-left: auto;
@@ -179,25 +177,36 @@
   margin-left: 0;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) {
   /* first section */
-
+  .overbox-hidden {
+    overflow: visible;
+  }
   .first-image,
   .second-image {
     border-radius: 0;
   }
-
-  .first-section {
-    overflow: visible;
+  .first-section,
+  .third-section {
+    padding-top: 120px;
+    padding-bottom: 32px;
   }
-
   .first-section .item {
     display: flex;
   }
-
+  .third-section .second-interior {
+    flex-direction: row;
+    row-gap: 48px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* .third-section .second-image {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+  } */
   .about-restaurant {
     width: 439px;
-    margin-top: 120px;
     margin-right: 26px;
   }
 
@@ -231,7 +240,7 @@
 
   .first-image {
     margin-left: 0;
-    margin-top: -32px;
+    margin-top: -144px;
     margin-bottom: 0;
     width: 400px;
     height: 524px;
@@ -243,7 +252,10 @@
     width: 350px;
     height: 500px;
   }
-
+  .third-section .second-image {
+    margin-right: 0;
+    margin-left: auto;
+  }
   .pictures-list .picture {
     height: 194px;
     min-width: 194px;
@@ -261,7 +273,6 @@
 
   .arrows-list {
     margin-top: 32px;
-
   }
 
   /* third section */
@@ -280,12 +291,12 @@
 
   .third-section .about-restaurant {
     width: 419px;
-    margin-top: 120px;
+
     margin-left: 46px;
     margin-right: 0;
   }
 
-    .third-section .header-tree {
+  .third-section .header-tree {
     margin-top: 4px;
     margin-bottom: 24px;
   }
@@ -316,23 +327,10 @@
 @media screen and (min-width: 1280px) {
   /* first section */
 
-  .first-section {
-    overflow: visible;
-  }
-
-  .first-section .item {
-    display: flex;
-  }
-
   .about-restaurant {
     width: 518px;
-    margin-top: 120px;
-    margin-right: 37px;
-  }
 
-  .header-two {
-    width: 317px;
-    font-size: 32px;
+    margin-right: 37px;
   }
 
   .header-tree {
@@ -394,7 +392,6 @@
 
   .arrows-list {
     margin-top: 36px;
-
   }
 
   /* third section */
@@ -413,12 +410,12 @@
 
   .third-section .about-restaurant {
     width: 518px;
-    margin-top: 120px;
+
     margin-left: 67px;
     margin-right: 0;
   }
 
-    .third-section .header-tree {
+  .third-section .header-tree {
     margin-top: 4px;
     margin-bottom: 24px;
   }
