@@ -216,7 +216,8 @@
 
 @media screen and (max-width: 1023px) {
   .tablet-content-wrap-hotel > .big-slider-wrap {
-    margin-left: 0;
+    margin-left: -15px;
+    width: 374px;
   }
 
   .hotel-slider-image.cropped {
@@ -261,7 +262,7 @@
   .slider-btn-wrap-right {
     margin-right: 0;
   }
-  .tablet-content-wrap {
+  .big-slider-wrap {
     width: calc(100% + 15px);
     overflow: hidden;
   }
@@ -495,7 +496,7 @@
     width: 270px;
   }
   .tablet-content-wrap {
-    
+
     gap: 32px;
     width: 1143px;
   }
