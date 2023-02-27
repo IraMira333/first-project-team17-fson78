@@ -551,12 +551,6 @@
 
 /* desktop */
 @media screen and (min-width: 1280px) {
-  /* .container {
-            width: 1140px;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin: auto;
-        } */
   .hero {
     padding-top: 164px;
     padding-bottom: 64px;
