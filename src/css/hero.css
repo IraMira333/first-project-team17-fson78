@@ -1,4 +1,5 @@
 .hero {
+  width: 100%;
   padding-top: 181px;
   padding-bottom: 20px;
   background-color: #0e0c07;
@@ -24,7 +25,7 @@
 }
 .hero-room-map:hover,
 .hero-room-map:focus {
-  background-color: rgba(0, 0, 0, 0.6);;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .hero-room-link {
   padding-left: 33px;
@@ -47,7 +48,9 @@
 
 .rest-hotel {
   width: 100%;
+
   /* position: relative; */
+
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
@@ -559,7 +562,6 @@
     padding-bottom: 64px;
   }
   .rest-hotel {
-    /* position: relative; */
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -567,7 +569,7 @@
       ),
       url(../img/hero-img/bg-hero-index.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1280px 720px;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
